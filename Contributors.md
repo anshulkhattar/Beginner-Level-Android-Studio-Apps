@@ -7,3 +7,4 @@ To add your name to the repository contributors, Use this template below:
 3. [Daniel Hartwich](https://github.com/dhartwich1991)
 4. [Anurag Sharma](https://github.com/aedorado)
 5. [Abdulrahman Abdulkarim](https://github.com/AbdulDroid)
+6. [Amit Chauhan](https://github.com/me-singh)
