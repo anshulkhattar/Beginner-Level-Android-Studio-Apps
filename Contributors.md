@@ -8,3 +8,4 @@ To add your name to the repository contributors, Use this template below:
 4. [Anurag Sharma](https://github.com/aedorado)
 5. [Abdulrahman Abdulkarim](https://github.com/AbdulDroid)
 6. [Amit Chauhan](https://github.com/me-singh)
+7. [Aurihona Neog](https://github.com/aurihona)
