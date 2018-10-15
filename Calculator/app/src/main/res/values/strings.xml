@@ -1,0 +1,27 @@
+<!--
+  ~ Coded by justudin <www.github.com/justudin>
+  ~ MIT (c) 2018.
+  -->
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Calculator</string>
+    <string name="plus">+</string>
+    <string name="min">-</string>
+    <string name="kali">x</string>
+    <string name="bagi">÷</string>
+    <string name="sat">1</string>
+    <string name="dua">2</string>
+    <string name="tig">3</string>
+    <string name="emp">4</string>
+    <string name="lim">5</string>
+    <string name="en">6</string>
+    <string name="tuj">7</string>
+    <string name="del">8</string>
+    <string name="sem">9</string>
+    <string name="nol">0</string>
+    <string name="sd">=</string>
+    <string name="koma">.</string>
+    <string name="c">C</string>
+</resources>
