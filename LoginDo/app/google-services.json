@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "175237063547",
+    "firebase_url": "https://firstfirebaseapp-f790c.firebaseio.com",
+    "project_id": "firstfirebaseapp-f790c",
+    "storage_bucket": "firstfirebaseapp-f790c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:175237063547:android:e1a6eeec7480dadd",
+        "android_client_info": {
+          "package_name": "e.hp.firebaseapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "175237063547-9braqqbaugpcmads4cb3c6pi5tf9auv2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAePG_hRebTAYKTCbfecO-4_AOH54BONUI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:175237063547:android:5d9b1bced645e1ce",
+        "android_client_info": {
+          "package_name": "e.hp.logindo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "175237063547-9braqqbaugpcmads4cb3c6pi5tf9auv2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAePG_hRebTAYKTCbfecO-4_AOH54BONUI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
