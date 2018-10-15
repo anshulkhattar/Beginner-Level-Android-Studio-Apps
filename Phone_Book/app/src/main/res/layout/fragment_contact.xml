@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Contact"
+    >
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_back"
+        android:layout_alignStart="@+id/fab5" />
+
+        <Space
+            android:id="@+id/econtact"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <ListView
+            android:id="@+id/allcontacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/econtact">
+
+        </ListView>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:visibility="invisible"
+            android:layout_margin="@dimen/fab_margin"
+            app:srcCompat="@drawable/ic_trash" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/ic_call_black_24dp"
+        android:layout_below="@+id/econtact"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        android:layout_margin="@dimen/fab_margin"
+        android:background="#00071F33"
+        app:srcCompat="@drawable/ic_message"
+        android:layout_below="@+id/fab4"/>
+
+
+
+</RelativeLayout>
