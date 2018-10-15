@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/restart" android:title="Restart" android:orderInCategory="100" android:showAsAction="always" />
+    <item android:id="@+id/undo" android:title="Undo" android:orderInCategory="100" android:showAsAction="always"/>
+</menu>
