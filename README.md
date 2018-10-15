@@ -11,4 +11,4 @@ As i have seen the java projects available in Hacktoberfest challenge , there ar
 5. Create a New Pull Request from your forked repository.
 6. Comment on the issue using the given format - "Name-AppName-PullRequestId"
 7. Wait for your PR review and merge approval!
-8. Star this repository if you liked the idea and had fun.
+# 8. Star this repository if you liked the idea and had fun.
