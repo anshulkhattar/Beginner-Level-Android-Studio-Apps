@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1E88E5</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#D50000</color>
+
+    <color name="bg_circle_color">#33691E</color>
+    <color name="timestamp_color">#4285f4</color>
+    <color name="horizontal_line_color">#c0c0c0</color>
+
+    <color name="list_item_selected_state">#e5ecec</color>
+    <color name="list_item_normal_state">#FFFFFF</color>
+
+    <color name="colorPrimaryBin">#757575</color>
+    <color name="colorPrimaryDarkBin">#616161</color>
+
+    <color name="colorPrimarySnooze">#ef6c00</color>
+    <color name="colorPrimaryDarkSnooze">#E65100</color>
+    <color name="colorContentSnooze">#ffb74d</color>
+
+    <color name="colorPrimaryDone">#0f9d58</color>
+    <color name="colorPrimaryDarkDone">#2E7D32</color>
+    <color name="colorContentDone">#33ac71</color>
+</resources>

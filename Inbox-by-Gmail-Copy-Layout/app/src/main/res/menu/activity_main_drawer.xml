@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group
+        android:id="@+id/first_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/inbox"
+            android:icon="@drawable/ic_menu_inbox"
+            android:title="@string/inbox" />
+        <item
+            android:id="@+id/snooze"
+            android:icon="@drawable/ic_menu_snooze"
+            android:title="@string/snoozed" />
+        <item
+            android:id="@+id/done"
+            android:icon="@drawable/ic_menu_done"
+            android:title="@string/done" />
+    </group>
+    <group
+        android:id="@+id/second_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/drafts"
+            android:icon="@drawable/ic_menu_drafts"
+            android:title="@string/drafts" />
+        <item
+            android:id="@+id/sent"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/sent" />
+        <item
+            android:id="@+id/reminders"
+            android:icon="@drawable/ic_menu_reminder"
+            android:title="@string/reminders" />
+        <item
+            android:id="@+id/bin"
+            android:icon="@drawable/ic_menu_bin"
+            android:title="@string/bin" />
+        <item
+            android:id="@+id/spam"
+            android:icon="@drawable/ic_menu_spam"
+            android:title="@string/spam" />
+    </group>
+    <item android:title="@string/inbox_bundle_heading">
+        <menu>
+            <item
+                android:id="@+id/trips"
+                android:icon="@drawable/ic_menu_trips"
+                android:title="@string/trips" />
+            <item
+                android:id="@+id/saved"
+                android:icon="@drawable/ic_menu_save"
+                android:title="@string/saved" />
+            <item
+                android:id="@+id/purchases"
+                android:icon="@drawable/ic_menu_purchase"
+                android:title="@string/purchases" />
+            <item
+                android:id="@+id/finance"
+                android:icon="@drawable/ic_menu_finance"
+                android:title="@string/finance" />
+            <item
+                android:id="@+id/social"
+                android:icon="@drawable/ic_menu_social"
+                android:title="@string/social" />
+            <item
+                android:id="@+id/updates"
+                android:icon="@drawable/ic_menu_updates"
+                android:title="@string/updates" />
+            <item
+                android:id="@+id/promos"
+                android:icon="@drawable/ic_menu_promotions"
+                android:title="@string/promos" />
+        </menu>
+    </item>
+    <group
+        android:id="@+id/third_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_menu_settings"
+            android:title="@string/settings" />
+        <item
+            android:id="@+id/help_feedback"
+            android:icon="@drawable/ic_menu_help"
+            android:title="@string/help_feedback" />
+    </group>
+</menu>

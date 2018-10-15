@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_pinned"
+        android:icon="@drawable/ic_action_pinned"
+        android:orderInCategory="100"
+        android:title="@string/action_pinned"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_snooze"
+        android:icon="@drawable/ic_action_snooze"
+        android:orderInCategory="200"
+        android:title="@string/action_snooze"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_delete"
+        android:icon="@drawable/ic_action_delete"
+        android:orderInCategory="300"
+        android:title="@string/action_delete"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_done"
+        android:icon="@drawable/ic_action_done"
+        android:orderInCategory="400"
+        android:title="@string/action_done"
+        app:showAsAction="ifRoom" />
+</menu>

@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Inbox</string>
+    <string name="compose_label">Compose</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_search">Search</string>
+    <string name="action_attachment">Attachment</string>
+    <string name="action_send">Send</string>
+
+    <!--Action Mode Menu Items-->
+    <string name="action_pinned">Pinned</string>
+    <string name="action_snooze">Snooze</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_done">Done</string>
+
+    <string name="gmail_account_name">Sreemoyee Chowdhury</string>
+    <string name="gmail_account_id">sreemoyee.chowdhury@gmail.com</string>
+    <string name="inbox">Inbox</string>
+    <string name="snoozed">Snoozed</string>
+    <string name="done">Done</string>
+    <string name="drafts">Drafts</string>
+    <string name="sent">Sent</string>
+    <string name="reminders">Reminders</string>
+    <string name="bin">Bin</string>
+    <string name="spam">Spam</string>
+
+    <string name="inbox_bundle_heading">Bundled in the inbox</string>
+    <string name="trips">Trips</string>
+    <string name="saved">Saved</string>
+    <string name="purchases">Purchases</string>
+    <string name="finance">Finance</string>
+    <string name="social">Social</string>
+    <string name="updates">Updates</string>
+    <string name="promos">Promos</string>
+
+    <string name="settings">Settings</string>
+    <string name="help_feedback">Help and feedback</string>
+
+    <string name="gmail_from">Udacity</string>
+    <string name="gmail_subject">Udacity - Free Online Classes &amp; Nanodegrees | Udacity</string>
+    <string name="gmail_message">Join Udacity to learn the latest in Deep Learning, Machine Learning, Web Development &amp; more, with Nanodegree programs &amp; free online courses.</string>
+    <string name="gmail_timestamp">10:30 AM</string>
+
+    <string name="composeFrom">From</string>
+    <string name="composeTo">To</string>
+    <string name="composeCc">Cc</string>
+    <string name="composeBcc">Bcc</string>
+    <string name="composeSubject">Subject</string>
+    <string name="composeEmail">Compose email</string>
+
+    <string-array name="gmail_list_id">
+        <item>sreemoyee.chowdhury@gmail.com</item>
+    </string-array>
+
+    <string name="snooze_message">Nothing in Snoozed</string>
+    <string name="done_message">Nothing in Done</string>
+    <string name="bin_message">Nothing in Bin</string>
+    <string name="drafts_message">Nothing in Drafts</string>
+    <string name="sent_message">Nothing in Sent</string>
+    <string name="reminders_message">Nothing in Reminders</string>
+    <string name="spam_message">Nothing in Spam</string>
+
+    <string name="snooze_sub_message">Anything that you Snooze will go here until it\'s time for it to return to the inbox.</string>
+    <string name="done_sub_message">Anything that you mark as Done will be stored safely here.</string>
+    <string name="bin_sub_message">Anything that you delete will be shown here.</string>
+    <string name="drafts_sub_message">Save a draft message and it will be shown here.</string>
+    <string name="sent_sub_message">Send a message and it will be shown here.</string>
+    <string name="reminders_sub_message">Create a Reminder and it will be shown here.</string>
+    <string name="spam_sub_message">Spam filters out unwanted messages. Move unwanted messages in Spam to improve its accuracy.</string>
+
+</resources>
