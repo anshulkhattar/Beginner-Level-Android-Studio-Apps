@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PrimeiroMeuAplicativo</string>
+    <string name="texto">Como nao fazer o seu primeiro app</string>
+    <string name="foda">Sou foda na cama te esculacho na sala ou no quarto, no beco ou no carro</string>
+    <string name="hello">Sou foda na cama te esculacho na sala ou no quarto, no beco ou no carro</string>
+    <string name="escolha_um_numero_entre_0_e_10">Escolha um numero entre 0 e 10</string>
+    <string name="gerar_num">GERAR NUM</string>
+    <string name="result">Result:</string>
+    <string name="todo">TODO</string>
+</resources>
