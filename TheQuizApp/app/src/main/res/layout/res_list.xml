@@ -1,0 +1,52 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/Que"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+
+        android:text="Marshmallow"
+        android:textSize="24px"
+        android:textColor="@color/blue" />
+
+
+    <TextView
+        android:id="@+id/ans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="left"
+        android:layout_marginTop="70px"
+        android:gravity="left"
+        android:text="API: "
+        android:textColor="@color/green"
+        android:textSize="24px" />
+
+    <TextView
+        android:id="@+id/entr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125px"
+
+
+        android:text="23"
+
+        android:textColor="@android:color/black"
+        android:textSize="24px" />
+
+    <ImageView
+        android:id="@+id/imageV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/tick" />
+
+
+</RelativeLayout>

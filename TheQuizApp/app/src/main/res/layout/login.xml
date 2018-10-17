@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/background_dialog"
+    android:layout_width="320.0dip" android:layout_height="250.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <TextView
+        android:id="@id/title2"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center"
+        android:text="Login"
+        android:textColor="@color/blue"
+
+        android:textSize="14.0sp" />
+
+
+
+
+    <TextView
+        android:id="@id/newTit"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="20.0dip"
+        android:gravity="left"
+        android:text="Enter UserID :"
+        android:textColor="#ff004269"
+        android:textSize="14.0sp" />
+
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="@color/new2"
+        android:theme="@style/btnS"
+        />
+
+    <TextView
+        android:id="@id/passText"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="10.0dip"
+        android:gravity="left"
+        android:text="Enter Password :"
+        android:textColor="#ff004269"
+        android:textSize="14.0sp" />
+
+
+    <EditText
+        android:id="@+id/paswrd"
+        android:layout_width="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_height="10dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text=""
+        android:textColor="@color/new2"
+        android:theme="@style/btnS"/>
+
+    <LinearLayout android:gravity="center"
+        android:id="@id/layoutButtons"
+        android:layout_gravity="center" android:orientation="horizontal"
+       android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip"
+        android:layout_marginBottom="5.0dip">
+
+        <Button
+            android:id="@id/rts"
+            style="@style/btnStyleDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+
+            android:textColor="#ff004269" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/reg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:onClick="regis"
+        android:gravity="center"
+        android:text="Sign Up"
+        android:textColor="@color/red"/>
+
+
+</LinearLayout>
