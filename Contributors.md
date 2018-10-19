@@ -11,3 +11,4 @@ To add your name to the repository contributors, Use this template below:
 7. [Sparsh Singhal](https://github.com/sparsh1999)
 8. [Ahmed Ezzat](https://github.com/AhmedMaghawry)
 9. [Satyajit Pradhan](https://github.com/Satyajiit)
+10. [Akshay Gupta](https://github.com/GuptaAkshay/)
