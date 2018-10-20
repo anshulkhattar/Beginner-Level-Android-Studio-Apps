@@ -1,0 +1,103 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Keylines -->
+    <dimen name="keyline_1">16dp</dimen>
+    <dimen name="keyline_1_minus_8dp">8dp</dimen>
+    <dimen name="keyline_2">72dp</dimen>
+    <dimen name="keyline_2_minus_16dp">56dp</dimen>
+
+    <!-- Texts -->
+    <dimen name="text_size_xsmall">11sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_medium">14sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_xlarge">20sp</dimen>
+    <dimen name="text_size_xxlarge">24sp</dimen>
+    <dimen name="text_size_diff_large_small">6sp</dimen>
+
+    <!-- Toolbar -->
+    <dimen name="toolbar_elevation">8dp</dimen>
+
+    <!-- Browse Movies -->
+    <item name="movie_item_image_aspect_ratio" format="float" type="dimen">.675</item>
+    <dimen name="spinner_left_padding">0dp</dimen>
+    <dimen name="spinner_drawable_padding">16dp</dimen>
+    <dimen name="explore_spinner_width">200dp</dimen>
+    <dimen name="explore_dropdown_item_height">48dp</dimen>
+
+    <!-- Movie Details -->
+    <item name="movie_details_cover_aspect_ratio" format="float" type="dimen">1.77</item>
+    <dimen name="movie_details_poster_width">150dp</dimen>
+    <dimen name="movie_details_poster_top_margin">-16dp</dimen>
+    <dimen name="movie_details_poster_left_margin">16dp</dimen>
+
+    <dimen name="movie_details_responsive_width">@dimen/match_parent</dimen>
+    <dimen name="movie_details_anchor_height">@dimen/match_parent</dimen>
+    <dimen name="movie_details_margin">0dp</dimen>
+    <dimen name="movie_details_content_margin_bottom">0dp</dimen>
+
+    <!-- Common -->
+    <dimen name="item_spacing_half">2dp</dimen>
+    <dimen name="item_spacing_full">4dp</dimen>
+    <dimen name="element_spacing_normal">8dp</dimen>
+    <dimen name="content_padding_normal">16dp</dimen>
+    <dimen name="card_corner_radius">2dp</dimen>
+    <dimen name="item_load_more_size">48dp</dimen>
+    <dimen name="flexible_space_image_height">300dp</dimen>
+    <dimen name="app_bar_height">230dp</dimen>
+    <dimen name="video_image_height">230dp</dimen>
+    <dimen name="back_button_layout_margin">5dp</dimen>
+    <dimen name="fragment_width">0dp</dimen>
+    <dimen name="movie_card_elevation">2dp</dimen>
+    <dimen name="zero_dp">0dp</dimen>
+    <dimen name="movie_title_font_size">18sp</dimen>
+    <dimen name="movie_releaseDate_font_size">14sp</dimen>
+    <dimen name="detail_poster_margin_left">10dp</dimen>
+    <dimen name="detaiLposter_width">180dp</dimen>
+    <dimen name="detaiLposter_height">240dp</dimen>
+    <dimen name="detaiLtitle_marginLeft">8dp</dimen>
+    <dimen name="detaiLtitle_marginTop">40dp</dimen>
+    <dimen name="detaiLtitle_fontSize">21sp</dimen>
+    <dimen name="movie_release_date_marginLeft">8dp</dimen>
+    <dimen name="movie_release_date_marginTop">7dp</dimen>
+    <dimen name="movie_release_date_fontSize">18sp</dimen>
+    <dimen name="movie_vote_marginLeft">8dp</dimen>
+    <dimen name="movie_vote_marginTop">7dp</dimen>
+    <dimen name="movie_vote_fontSize">18sp</dimen>
+    <dimen name="line_marginTop">10dp</dimen>
+    <dimen name="line_height">1dp</dimen>
+    <dimen name="plot_margin">8dp</dimen>
+    <dimen name="plot_fontSize">19sp</dimen>
+    <dimen name="video_image">250dp</dimen>
+    <dimen name="fab_elevation">14dp</dimen>
+    <dimen name="app_bar_tablet_height">270dp</dimen>
+    <dimen name="cast_right_margin">5dp</dimen>
+    <dimen name="cast_width">130dp</dimen>
+    <dimen name="cast_height">180dp</dimen>
+    <dimen name="movie_poster_grid_height">254dp</dimen>
+    <dimen name="castNameTitle">16sp</dimen>
+    <dimen name="castTitle">16sp</dimen>
+    <dimen name="posterWidth">120dp</dimen>
+    <dimen name="posterHeight">190dp</dimen>
+    <dimen name="thirteendp">13dp</dimen>
+    <dimen name="nineteensp">19sp</dimen>
+    <dimen name="sevendp">7dp</dimen>
+    <dimen name="threedp">3dp</dimen>
+    <dimen name="fourteensp">14sp</dimen>
+    <dimen name="fivedp">5sp</dimen>
+    <dimen name="fifteensp">15sp</dimen>
+    <dimen name="eightdp">8dp</dimen>
+    <dimen name="twentytwosp">22sp</dimen>
+    <dimen name="twentydp">20dp</dimen>
+    <dimen name="tendp">10dp</dimen>
+    <dimen name="twentysp">20sp</dimen>
+    <dimen name="sixteendp">16dp</dimen>
+    <dimen name="videoImageHeightTab">270dp</dimen>
+    <item name="match_parent" type="dimen">-1</item>
+    <item name="wrap_content" type="dimen">-2</item>
+    <item name="linearheight" type="dimen">130dp</item>
+</resources>

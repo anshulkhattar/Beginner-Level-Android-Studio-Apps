@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/linearheight"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginRight="@dimen/cast_right_margin">
+
+    <ImageView
+        android:id="@+id/castImage"
+        android:layout_width="@dimen/cast_width"
+        android:layout_height="@dimen/cast_height"
+
+        android:contentDescription="@string/celebimage"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/castName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/cast_right_margin"
+        android:maxLines="3"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/castNameTitle"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/cast_right_margin"
+        android:maxLines="3"
+        android:text="@string/as" />
+
+    <TextView
+        android:id="@+id/castTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/cast_right_margin"
+        android:alpha="0.8"
+        android:maxLines="3"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/castTitle" />
+
+</LinearLayout>
