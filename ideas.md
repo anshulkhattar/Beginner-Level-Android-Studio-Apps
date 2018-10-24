@@ -2,5 +2,5 @@
 List any ideas you may have for Beginner Level Android Apps
 
 -  Tic Tac Toe Game (Human vs Computer, or allow players to interact remotely with each other for advanced feature)
-
--	Advanced daily work schedualer 
+-	 Advanced daily work scheduler 
+-  Deepti Sharma (An App to manage our time well)
