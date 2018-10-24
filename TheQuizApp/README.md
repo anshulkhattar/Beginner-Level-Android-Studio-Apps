@@ -8,11 +8,11 @@ http://satyajiit.xyz/download.php?name=The_Quiz&type=app
 * It has Combined some of the Open Source Projects.
 * In-App Updation Feature
 
-<img src="/Screenshots/The_Quiz1.jpg" height="583" width="350" border="1px"/>&nbsp;
-<img src="/Screenshots/The_Quiz2.jpg" height="583" width="350" />&nbsp;
+![](Screenshots/The_Quiz1.jpg)&nbsp;
+![](Screenshots/The_Quiz2.jpg)&nbsp;
 
-<img src="/Screenshots/The_Quiz3.jpg" height="583" width="350" />&nbsp;
-<img src="/Screenshots/The_Quiz4.jpg" height="583" width="350" />&nbsp;
+![](Screenshots/The_Quiz3.jpg)&nbsp;
+![](Screenshots/The_Quiz4.jpg)&nbsp;
 
 
 ## Information
