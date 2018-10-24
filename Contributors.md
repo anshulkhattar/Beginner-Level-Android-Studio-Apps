@@ -4,6 +4,8 @@ To add your name to the repository contributors, Use this template below:
 -->
 [Soul Spark](https://github.com/soulspark666)
 
+[Muhammad Fiaz Ansari](https://github.com/mfiazansari)
+
 [Justudin](https://github.com/justudin)
 
 [Daniel Hartwich](https://github.com/dhartwich1991)
