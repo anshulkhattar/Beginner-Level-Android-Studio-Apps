@@ -1,6 +1,6 @@
 <!--
 To add your name to the repository contributors, Use this template below:
-[Your Name Goes Here]( http://Your Github Link ) 
+[Your Name Goes Here]( http://Your Github Link )
 -->
 [Soul Spark](https://github.com/soulspark666)
 
@@ -11,6 +11,8 @@ To add your name to the repository contributors, Use this template below:
 [Daniel Hartwich](https://github.com/dhartwich1991)
 
 [Anurag Sharma](https://github.com/aedorado)
+
+[Nudennie White](https://github.com/tc2r)
 
 [Abdulrahman Abdulkarim](https://github.com/AbdulDroid)
 
