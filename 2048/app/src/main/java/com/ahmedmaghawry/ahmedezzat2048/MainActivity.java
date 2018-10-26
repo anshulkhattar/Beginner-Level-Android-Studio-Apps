@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
                         TextView te = (TextView) grid.getChildAt(4 * row + i);
                         te.setText(board.get(4 * row + i + 1));
                         board.set(4 * row + i + 1, "");
-                        TextView te2 = (TextView) grid.getChildAt(4 * row + i + 1);
+                        TextView te2 = (TextView) grid.getChildAt(4 * row + 1+i);
                         te2.setText("");
                     } else if ((board.get(4 * row + i)).equals(board.get(4 * row + i + 1))) {
                         board.set(4 * row + i, "" + (Integer.parseInt(board.get(4 * row + i + 1))) * 2);
