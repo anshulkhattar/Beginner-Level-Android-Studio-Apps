@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+import java.util.Scanner;
 
 import com.google.zxing.intergration.android.IntentIntegrator;
 import com.google.zxing.intergration.android.IntentResult;
