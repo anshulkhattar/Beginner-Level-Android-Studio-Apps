@@ -1,0 +1,44 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Twitter Clone</string>
+
+
+    <string name="tweet_middle">•</string>
+
+    <string name="sample_tweet_profile_name">Apple TV</string>
+    <string name="sample_tweet_profile_id">\@AppleTV</string>
+    <string name="sample_tweet_time">12m</string>
+    <string name="sample_tweet">2017.4 is the first of our long-term supported (LTS) releases, completely focused on bug fixes! Learn more about our new release plans:  https://on.unity.com/2IDZhiE  #QA #unitytips</string>
+
+    <string name="no_search_results">Nothing to search. Yet.</string>
+
+    <string name="no_notification">Nothing to see here. Yet.</string>
+    <string name="no_notification_info">When someone mentions you in a Tweet, you\'ll see it here</string>
+
+    <string name="no_direct_message">Talk privately with anyone who follows you. Start by adding your number and uploading your contacts.</string>
+    <string name="no_direct_message_button">Find friends</string>
+
+    <!-- Navigation Drawer items-->
+    <string name="user_name">Abhishek Chaudhary</string>
+    <string name="user_screen_name">\@coder_abhishek</string>
+    <string name="following_number">32</string>
+    <string name="followers_number">7</string>
+    <string name="following">Following</string>
+    <string name="followers">Followers</string>
+
+    <string name="profile">Profile</string>
+    <string name="lists">Lists</string>
+    <string name="moments">Moments</string>
+    <string name="settings_and_privacy">Settings and Privacy</string>
+    <string name="help_center">Help Center</string>
+
+    <!-- Navigation Action Bar Titles-->
+    <string name="home_tab">Home</string>
+    <string name="search_tab">Search</string>
+    <string name="notification_tab">Notifications</string>
+    <string name="direct_message_tab">Messages</string>
+
+
+    <string name="scree_name">
+        \@<xliff:g example="abhishek" id="name">%1$s</xliff:g>
+    </string>
+</resources>
