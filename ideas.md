@@ -7,3 +7,4 @@ List any ideas you may have for Beginner Level Android Apps
 
 - "Bluetooth four wins. So you can play together at boring moments"
 - restaurant finder
+- Wing-Statistical Methods Reference App
