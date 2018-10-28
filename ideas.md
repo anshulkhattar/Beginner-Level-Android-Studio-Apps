@@ -6,3 +6,4 @@ List any ideas you may have for Beginner Level Android Apps
 -  Deepti Sharma (An App to manage our time well)
 
 - "Bluetooth four wins. So you can play together at boring moments"
+- restaurant finder
