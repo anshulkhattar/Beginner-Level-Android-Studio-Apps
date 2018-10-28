@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DropDownView">
+        <attr name="array" format="reference"/>
+
+        <!-- default index is -1 which is no data will selected
+        if default_index > array size then will default_index will set to -1-->
+        <attr name="defaultIndex" format="integer"/>
+    </declare-styleable>
+
+    <item name="item_click_support" type="id" />
+</resources>

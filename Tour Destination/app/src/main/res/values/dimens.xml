@@ -1,0 +1,73 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!--for text-->
+    <dimen name="text_too_big">30dp</dimen>
+    <dimen name="text_very_very_big">26dp</dimen>
+    <dimen name="text_very_big">22dp</dimen>
+    <dimen name="text_big">18dp</dimen>
+    <dimen name="text_under_big">16dp</dimen>
+    <dimen name="text_primary_size">14dp</dimen>
+    <dimen name="text_size_header">18dp</dimen>
+    <dimen name="text_normal">12dp</dimen>
+    <dimen name="text_more_normal">12dp</dimen>
+    <dimen name="text_small">10dp</dimen>
+
+    <dimen name="width_text_view">150dp</dimen>
+    <dimen name="width_text_detail">110dp</dimen>
+    <dimen name="width_text_to_dotted">200dp</dimen>
+
+    <dimen name="height_line">5dp</dimen>
+
+    <!--for padding-->
+    <dimen name="padding_from_header">20dp</dimen>
+    <dimen name="padding_from_border">10dp</dimen>
+    <dimen name="padding_from_small_border">5dp</dimen>
+
+    <!--for margin-->
+    <dimen name="margin_from_top_header">15dp</dimen>
+    <dimen name="margin_from_left_right">10dp</dimen>
+    <dimen name="margin_from_top_text">5dp</dimen>
+
+    <dimen name="radius">5dp</dimen>
+    <dimen name="big_radius">10dp</dimen>
+    <dimen name="super_super_big_radius">50dp</dimen>
+    <!-- for border -->
+    <dimen name="border_height">0.1dp</dimen>
+
+    <!-- for image -->
+    <dimen name="height_pict_profile">120dp</dimen>
+    <dimen name="width_pict_profile">120dp</dimen>
+    <dimen name="card_album_radius">3dp</dimen>
+    <dimen name="width_cover">125dp</dimen>
+    <dimen name="text_level">10dp</dimen>
+    <dimen name="text_title_course">14dp</dimen>
+    <dimen name="text_description_course">12dp</dimen>
+
+    <dimen name="item_offset">10dp</dimen>
+    <dimen name="detail_backdrop_height">250dp</dimen>
+    <dimen name="backdrop_title">30dp</dimen>
+    <dimen name="backdrop_subtitle">18dp</dimen>
+    <dimen name="card_margin">3dp</dimen>
+    <dimen name="album_cover_height">135dp</dimen>
+    <dimen name="album_title_padding">10dp</dimen>
+    <dimen name="album_title_padding2">15dp</dimen>
+    <dimen name="album_title">18dp</dimen>
+    <dimen name="songs_count_padding_bottom">3dp</dimen>
+    <dimen name="deskripsi">13dp</dimen>
+    <dimen name="ic_album_overflow_width">20dp</dimen>
+    <dimen name="ic_album_overflow_height">30dp</dimen>
+    <dimen name="ic_album_overflow_margin_top">10dp</dimen>
+    <dimen name="cover_width">140dp</dimen>
+    <dimen name="cover_height">90dp</dimen>
+    <dimen name="button_radius_large">25dp</dimen>
+    <dimen name="app_bar_height">250dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="header_text_size">17dp</dimen>
+    <dimen name="judul_tenant">16dp</dimen>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp">
+
+        <ImageView
+            android:id="@+id/img_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="4dp"
+            android:background="@color/placeholder_bg"/>
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/loading"
+            style="@style/AVLoadingIndicatorView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:indicatorName="BallScaleMultipleIndicator"
+            app:indicatorColor="@color/colorPrimary"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_alignTop="@+id/img_cover"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

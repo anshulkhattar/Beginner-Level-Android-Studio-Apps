@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_cover"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:background="@color/placeholder_bg"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/helvetical_neu_bold"
+                android:textSize="18dp"
+                android:textColor="@color/charcoal"
+                tools:text="Pameran Gallery Lukisan"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_event_note_grey_24dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/txt_tanggal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/helvetical_neu_light"
+                    android:text="20 Agustus 2018"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_deskripsi"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/helvetical_neu_light"
+                android:layout_marginTop="2dp"
+                android:textSize="13sp"
+                android:layout_height="wrap_content"
+                android:text="It will automatically build, test, and deploy your application based on a predefined CI/CD configuration."/>
+
+            <TextView
+                android:id="@+id/txt_kategori"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_rounded"
+                android:textColor="@color/white"
+                android:fontFamily="@font/helvetical_neu_light"
+                android:paddingLeft="10dp"
+                android:paddingBottom="3dp"
+                android:textSize="13sp"
+                android:paddingRight="10dp"
+                android:text="Pameran"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorHeaderText"/>
+
+</LinearLayout>
