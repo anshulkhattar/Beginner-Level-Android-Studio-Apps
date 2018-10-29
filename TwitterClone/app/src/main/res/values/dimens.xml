@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="tweet_margin_vertical">8dp</dimen>
+
+    <!--  Dimensions for Tweet Image -->
+    <dimen name="tweet_profile_image_width">52dp</dimen>
+    <dimen name="tweet_profile_image_height">52dp</dimen>
+    <dimen name="tweet_profile_image_margin">12dp</dimen>
+
+    <!-- -->
+    <dimen name="tweet_icon_size">20dp</dimen>
+
+    <dimen name="no_notification_text_size">28sp</dimen>
+    <dimen name="no_notification_info_text_size">16sp</dimen>
+    <dimen name="no_content_padding">18dp</dimen>
+
+    <dimen name="no_message_text_size">24sp</dimen>
+    <dimen name="no_message_horizontal_padding">36dp</dimen>
+    <dimen name="no_message_vertical_padding">18dp</dimen>
+</resources>

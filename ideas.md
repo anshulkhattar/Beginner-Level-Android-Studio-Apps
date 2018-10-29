@@ -7,6 +7,7 @@ List any ideas you may have for Beginner Level Android Apps
 
 - "Bluetooth four wins. So you can play together at boring moments"
 
+
 -subratred8, Home Automation using raspberry, remote controlled via android phone remotely else local wifi. Raspberry Pi project already ready.
 
 -subratred8, Location based people identification with some common interest.
@@ -16,4 +17,4 @@ List any ideas you may have for Beginner Level Android Apps
 -subratred8, Applicaiton that globally stores people face recognition and can track details when a person is scanned by a camera thus diplaying details.
 
 -subraterd8, Application to notify definite contacts whenever a shock or jerk is recorded by the android device.
-
+- restaurant finder
