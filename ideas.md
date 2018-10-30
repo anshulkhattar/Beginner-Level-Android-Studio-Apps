@@ -5,6 +5,9 @@ List any ideas you may have for Beginner Level Android Apps
 - Advanced daily work scheduler 
 - Deepti Sharma (An App to manage our time well)
 - "Bluetooth four wins. So you can play together at boring moments"
+- "Fighting suicide - An application to help fight suicide, where users can talk to each other and receive recommendations for professionals in the area."
+
+- "Q-detective - Application to perform mapping of places where crimes occur freguently, based on the reports of its users."
 - The tracker for the amount of hours spent working on a single task during the day (e.g. project at work, studying, hobby etc)
 -subratred8, Home Automation using raspberry, remote controlled via android phone remotely else local wifi. Raspberry Pi project already ready.
 
@@ -24,5 +27,6 @@ List any ideas you may have for Beginner Level Android Apps
 - creating an app for transportaion such where is the bus at present and how many minutes it will take to arrive to present place.
 - Wing-Statistical Methods Reference App
 - basic calendar app
+
 
 
