@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Boxca</string>
+    <string name="cancel">Ləvğ</string>
+    <string name="cannot_reach_to_file">Fayla çatmaq mümkünsüzdür! Xahiş olunur, yenidən seçin.</string>
+    <string name="cannot_read_write">Faylı oxuyub/yazmaq olmur!</string>
+    <string name="cannot_upload_to_server">Faylı serverə yükləmək mümkün olmadı</string>
+    <string name="choose_file">fayl seç</string>
+    <string name="choose_file_first">Xahiş olunur, fayl seçin</string>
+    <string name="choose_file_to_upload">Yükləmək üçün fayl seçin</string>
+    <string name="file">Fayl</string>
+    <string name="link_copied">Link kopyalandı!</string>
+    <string name="permission_required">icazə istənilir</string>
+    <string name="set_expiry">Bitmə müddəti</string>
+    <string name="terms_of_service">İstifadə Qaydaları</string>
+    <string name="upload">Yüklə</string>
+    <string name="upload_a_file">Faylı yüklə</string>
+    <string name="url_error">URL səhvi!</string>
+    <string name="uploading_file">Fayl yüklənir...</string>
+    <string name="your_file_successfully_uploaded_n_click_to_the_link_to_copy_n_expires_in_s">Sizin fayl yükləndi! \n Kopyalamaq üçün linkə klikləyin \n Bitir %s</string>
+
+    <string-array name="days_array">
+        <item>1 gün</item>
+        <item>3 gün</item>
+        <item>5 gün</item>
+        <item>1 həftə</item>
+        <item>1 ay</item>
+        <item>1 il</item>
+    </string-array>
+</resources>
