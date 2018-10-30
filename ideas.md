@@ -16,4 +16,6 @@ List any ideas you may have for Beginner Level Android Apps
 
 -subraterd8, Application to notify definite contacts whenever a shock or jerk is recorded by the android device.
 - restaurant finder
+- Wing-Statistical Methods Reference App
 - basic calendar app
+
