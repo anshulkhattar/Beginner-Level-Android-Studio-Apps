@@ -1,0 +1,46 @@
+
+
+<LinearLayout android:orientation="vertical" android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/rest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+
+        android:gravity="center"
+        android:textSize="64px"
+        android:textColor="@color/blue"
+        android:text="TextView" />
+
+    <com.github.mikephil.charting.charts.PieChart xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_marginTop="10dp"
+        android:id="@+id/piechart"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/anal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+
+        android:gravity="center"
+        android:textSize="64px"
+        android:textColor="@color/org2"
+        android:text="Answers" />
+
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+
+
+</LinearLayout>

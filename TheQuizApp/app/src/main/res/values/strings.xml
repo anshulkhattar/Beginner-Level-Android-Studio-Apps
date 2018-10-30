@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="store_picture_title">Save image</string>
+    <string name="store_picture_message">Allow Ad to store image in Picture gallery?</string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+    <string name="create_calendar_title">Create calendar event</string>
+    <string name="create_calendar_message">Allow Ad to create a calendar event?</string>
+    <string name="common_google_play_services_notification_ticker">Google Play services error</string>
+    <string name="common_google_play_services_notification_needs_installation_title">An application requires installation of Google Play services.</string>
+    <string name="common_google_play_services_notification_needs_update_title">An application requires an update for Google Play services.</string>
+    <string name="common_android_wear_notification_needs_update_text">An application requires an update to the Android Wear app.</string>
+    <string name="common_google_play_services_needs_enabling_title">An application requires Google Play services to be enabled.</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Requested by %1$s</string>
+    <string name="common_google_play_services_install_title">Get Google Play services</string>
+    <string name="common_google_play_services_install_text_phone">"This app won't run without Google Play services, which are missing from your phone."</string>
+    <string name="common_google_play_services_install_text_tablet">"This app won't run without Google Play services, which are missing from your tablet."</string>
+    <string name="common_google_play_services_install_button">Get Google Play services</string>
+    <string name="common_google_play_services_enable_title">Enable Google Play services</string>
+    <string name="common_google_play_services_enable_text">"This app won't work unless you enable Google Play services."</string>
+    <string name="common_google_play_services_enable_button">Enable Google Play services</string>
+    <string name="common_google_play_services_update_title">Update Google Play services</string>
+    <string name="common_android_wear_update_title">Update Android Wear</string>
+    <string name="common_google_play_services_update_text">"This app won't run unless you update Google Play services."</string>
+    <string name="common_android_wear_update_text">"This app won't run unless you update the Android Wear app."</string>
+    <string name="common_google_play_services_network_error_title">Network Error</string>
+    <string name="common_google_play_services_network_error_text">A data connection is required to connect to Google Play services.</string>
+    <string name="common_google_play_services_invalid_account_title">Invalid Account</string>
+    <string name="common_google_play_services_invalid_account_text">The specified account does not exist on this device. Please choose a different account.</string>
+    <string name="common_google_play_services_unknown_issue">Unknown issue with Google Play services.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play services</string>
+    <string name="common_google_play_services_unsupported_text">Google Play services, which some of your applications rely on, is not supported by your device. Please contact the manufacturer for assistance.</string>
+    <string name="common_google_play_services_update_button">Update</string>
+    <string name="common_signin_button_text">Sign in</string>
+    <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="common_open_on_phone">Open on phone</string>
+    <string name="wallet_buy_button_place_holder">Buy with Google</string>
+    <string name="app_id">946847555941</string>
+    <string name="achievement_first_steps">CgkI5cKMpMcbEAIQBw</string>
+    <string name="achievement_scholar">CgkI5cKMpMcbEAIQCA</string>
+    <string name="achievement_advanced_scholar">CgkI5cKMpMcbEAIQCQ</string>
+    <string name="achievement_expert_scholar">CgkI5cKMpMcbEAIQCg</string>
+    <string name="achievement_explorer">CgkI5cKMpMcbEAIQCw</string>
+    <string name="achievement_challenger">CgkI5cKMpMcbEAIQDA</string>
+    <string name="achievement_challenger_winner">CgkI5cKMpMcbEAIQDQ</string>
+    <string name="achievement_unlock_medium">CgkI5cKMpMcbEAIQDg</string>
+    <string name="achievement_unlock_hard">CgkI5cKMpMcbEAIQDw</string>
+    <string name="leaderboard_correct_answers_easy">CgkI5cKMpMcbEAIQAA</string>
+    <string name="leaderboard_accuracy_easy">CgkI5cKMpMcbEAIQEA</string>
+    <string name="leaderboard_correct_answers_medium">CgkI5cKMpMcbEAIQAg</string>
+    <string name="leaderboard_accuracy_medium">CgkI5cKMpMcbEAIQEQ</string>
+    <string name="leaderboard_correct_answers_hard">CgkI5cKMpMcbEAIQBA</string>
+    <string name="leaderboard_accuracy_hard">CgkI5cKMpMcbEAIQEg</string>
+    <string name="app_name">THE QUIZ</string>
+    <string name="action_settings">Settings</string>
+    <string name="ok">Yes</string>
+    <string name="remaining_time">30</string>
+    <string name="hint">Remove a wrong answer</string>
+    <string name="retreat">Retreat from game and lose less gold</string>
+    <string name="game_gold">gold</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="start">PLAY</string>
+    <string name="level">Check Update</string>
+    <string name="help">ABOUT</string>
+    <string name="help6">click here to visit my website!</string>
+    <string name="scores">Scores</string>
+    <string name="moreGames">Exit</string>
+    <string name="title_activity_level">LevelActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="easy">Computer</string>
+    <string name="medium">Physics</string>
+    <string name="hard">Chemistry</string>
+    <string name="exit">Exit</string>
+    <string name="ask_exit">Are you sure you want to exit?</string>
+    <string name="ask_next">Are you ready for another question?</string>
+    <string name="ask_next_bonus">"You get a %1$d gold bonus for answer %2$d consecutive questions.
+Are you ready for another question?"</string>
+    <string name="victory">Congratulations!</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="wrong">Wrong</string>
+    <string name="unlock">Unlock</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="no_internet_tip">Make sure you have acces to internet and try again.</string>
+    <string name="wrong_tip">Unfortunately you missed the right answer.</string>
+    <string name="wrong_tip_buy">"Unfortunately you missed the right answer.
+Would you whisper it to you for only %1$d points?"</string>
+    <string name="time_up">"Time's up"</string>
+    <string name="tip_to_retreat">"You can retreat and loose less gold if you don't know the answer"</string>
+    <string name="title_activity_loading">Loading</string>
+    <string name="loading1">"Loading
+. . ."</string>
+    <string name="loading2">"Loading
+."</string>
+    <string name="back">BACK</string>
+    <string name="cancel">Cancel</string>
+    <string name="mood">mood</string>
+    <string name="warning_unlock">You need %1$d gold to unlock this level</string>
+    <string name="facebook">facebook</string>
+    <string name="help1">"This App has been created to improve my skills and learning."</string>
+
+    <string name="help2">"The app downloads questions from my server and show them."</string>
+    <string name="help3">"I hope You will like it!
+"</string>
+    <string name="help4">"Developed by : Satyajit Pradhan
+        Mail me at SatyaJiit0@gmail.com
+        Skilled with :
+        HTML , CSS , JAVA , PHP , Android , C , Visual Basic , XML
+"</string>
+
+    <string name="join_facebook">Join us on Facebook</string>
+    <string name="please_wait">Please wait…</string>
+    <string name="if_like">If you like</string>
+    <string name="pls_rate">", please take a moment to rate it.
+
+Thanks for your help!"</string>
+    <string name="rate">Rate</string>
+    <string name="later">Remind me later</string>
+    <string name="not_show_again">Do not show again</string>
+    <string name="inchide">Close</string>
+    <string name="da">Yes</string>
+    <string name="show_answer">"The correct answer is:
+"</string>
+    <string name="show_answer_title">Keep the secret!</string>
+    <string name="facebook_reward">Enter the Facebook page by clicking on the logo from Help and get a 5 points bonus.</string>
+    <string name="daily_bonus_tip">The first correct answer of the day offers a bonus of 5 points</string>
+    <string name="daily_bonus_taken">You got five bonus points for the first correct answer of the day</string>
+    <string name="retreat_buy">"Do wou want to know the correct answer?
+I'll thell you for %1$d point(s) !"</string>
+    <string name="retreat_title">Retreat</string>
+    <string name="statistics">Mathematics</string>
+    <string name="correct_answers">Correct answers</string>
+    <string name="total_questions">Total questions</string>
+    <string name="accuracy">Accuracy</string>
+    <string name="submit_scores">Submit scores online</string>
+    <string name="challenge_corect">"Your answer is correct. Now you have %1$d points.
+The next question is worth %2$d points."</string>
+    <string name="challenge_ultima">You won the challenge! In total you have gathered 100 points.</string>
+    <string name="challenge_gresit">"If you don't know the answer is better to retreat.
+You left off with %1$d points"</string>
+    <string name="challenge_tip_to_retreat">If you do not know the answer, you can retreat to get the points obtained.</string>
+    <string name="start_challenge">Challenge</string>
+    <string name="enter_clallenge">"Challenge cost 10 points.
+Do you want to continue?"</string>
+    <string name="enter_clallenge_error">"You do not have enough points.
+Challenge cost 10 points."</string>
+
+    <string name="challenge_retreat">you have gathered %1$d points.</string>
+    <string name="help5">"Thats all for now...
+        Please rate the App and appreciate the developer.
+        Visit my Website www.SATYAJIIT.XYZ to check all my works!"</string>
+
+
+
+
+
+
+
+
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start2">GOT IT</string>
+
+    <string name="slide_1_title">Hello There!</string>
+    <string name="slide_1_desc">Thanks for Installing this App.</string>
+
+    <string name="slide_2_title">BUILT WITH LOVE</string>
+    <string name="slide_2_desc">The App Test your grip over the programming languages..ie C..Just SignUp using name and password! Its Easy..</string>
+
+    <string name="slide_3_title">DEVELOPER MSG</string>
+    <string name="slide_3_desc">Get every question correct and i assure you to be the best coder...All the Best..</string>
+
+    <string name="slide_4_title">LOVE YOU</string>
+    <string name="slide_4_desc">Happy Playing the Quiz</string>
+
+
+
+
+
+
+
+
+</resources>

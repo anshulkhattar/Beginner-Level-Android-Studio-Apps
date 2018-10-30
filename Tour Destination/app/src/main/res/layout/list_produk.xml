@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border">
+
+            <RelativeLayout
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:mrl_rippleAlpha="0.2"
+                    app:mrl_rippleColor="#585858"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img_cover"
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:scaleType="centerCrop"
+                            android:background="@color/placeholder_bg" />
+
+                        <TextView
+                            android:id="@+id/txt_nama"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3sp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/helvetical_neu_medium"
+                            android:text="Lukisan 3D Alami"
+                            android:textColor="@color/charcoal" />
+
+                        <TextView
+                            android:id="@+id/txt_deskripsi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/helvetical_neu_light"
+                            android:text="Lorem Ipsum indonesia kita bisa"
+                            android:textSize="13dp" />
+
+                        <RatingBar
+                            style="@style/customRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:numStars="5"
+                            android:rating="3"
+                            android:stepSize="0.2" />
+                    </LinearLayout>
+                </com.balysv.materialripple.MaterialRippleLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/loading"
+            style="@style/AVLoadingIndicatorView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            app:indicatorColor="@color/colorPrimary"
+            app:indicatorName="BallScaleMultipleIndicator" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_harga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/bg_harga_rounded"
+        android:text="Rp. 200K" />
+</RelativeLayout>

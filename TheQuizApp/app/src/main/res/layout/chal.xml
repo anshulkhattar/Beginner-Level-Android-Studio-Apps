@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:id="@id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@id/liniarLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@id/layoutscoreEasy"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:background="@drawable/question_bg">
+
+                <TextView
+                    android:id="@id/textViewTitleEasy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Contest"
+                    android:textColor="#ffff0000"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@id/textViewCorrectEasy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/textViewTitleEasy"
+                    android:layout_marginLeft="35.0dip"
+                    android:layout_marginTop="25dp"
+                    android:text="Top Scorers will be awarded paytm cash every month. Keep updating the App."
+                    android:textColor="#ff004269"
+                    android:textSize="15.0sp" />
+
+
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

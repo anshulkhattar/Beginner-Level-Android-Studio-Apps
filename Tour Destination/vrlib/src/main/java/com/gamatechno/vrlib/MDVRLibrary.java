@@ -1,0 +1,838 @@
+package com.gamatechno.vrlib;
+
+import android.content.Context;
+import android.graphics.RectF;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
+import android.net.Uri;
+import android.opengl.GLSurfaceView;
+import android.util.Log;
+import android.view.MotionEvent;
+import android.view.Surface;
+import android.view.View;
+import android.widget.Toast;
+
+import com.gamatechno.vrlib.common.GLUtil;
+import com.gamatechno.vrlib.common.MDGLHandler;
+import com.gamatechno.vrlib.common.MDMainHandler;
+import com.gamatechno.vrlib.compact.CompactEyePickAdapter;
+import com.gamatechno.vrlib.compact.CompactTouchPickAdapter;
+import com.gamatechno.vrlib.model.BarrelDistortionConfig;
+import com.gamatechno.vrlib.model.MDDirectorBrief;
+import com.gamatechno.vrlib.model.MDFlingConfig;
+import com.gamatechno.vrlib.model.MDHitEvent;
+import com.gamatechno.vrlib.model.MDMainPluginBuilder;
+import com.gamatechno.vrlib.model.MDPinchConfig;
+import com.gamatechno.vrlib.model.MDRay;
+import com.gamatechno.vrlib.plugins.MDAbsPlugin;
+import com.gamatechno.vrlib.plugins.MDPluginManager;
+import com.gamatechno.vrlib.plugins.hotspot.IMDHotspot;
+import com.gamatechno.vrlib.plugins.hotspot.MDAbsView;
+import com.gamatechno.vrlib.strategy.display.DisplayModeManager;
+import com.gamatechno.vrlib.strategy.interactive.InteractiveModeManager;
+import com.gamatechno.vrlib.strategy.projection.IMDProjectionFactory;
+import com.gamatechno.vrlib.strategy.projection.ProjectionModeManager;
+import com.gamatechno.vrlib.texture.MD360BitmapTexture;
+import com.gamatechno.vrlib.texture.MD360CubemapTexture;
+import com.gamatechno.vrlib.texture.MD360Texture;
+import com.gamatechno.vrlib.texture.MD360VideoTexture;
+import com.google.android.apps.muzei.render.GLTextureView;
+
+import java.util.Iterator;
+import java.util.List;
+
+import static com.gamatechno.vrlib.common.VRUtil.notNull;
+
+/**
+ * Created by hzqiujiadi on 16/3/12.
+ * hzqiujiadi ashqalcn@gmail.com
+ */
+public class MDVRLibrary {
+
+    private static final String TAG = "MDVRLibrary";
+    public static final int sMultiScreenSize = 2;
+
+    // interactive mode
+    public static final int INTERACTIVE_MODE_MOTION = 1;
+    public static final int INTERACTIVE_MODE_TOUCH = 2;
+    public static final int INTERACTIVE_MODE_MOTION_WITH_TOUCH = 3;
+    public static final int INTERACTIVE_MODE_CARDBORAD_MOTION = 4;
+    public static final int INTERACTIVE_MODE_CARDBORAD_MOTION_WITH_TOUCH = 5;
+
+    // display mode
+    public static final int DISPLAY_MODE_NORMAL = 101;
+    public static final int DISPLAY_MODE_GLASS = 102;
+
+    // projection mode
+    public static final int PROJECTION_MODE_SPHERE = 201;
+    public static final int PROJECTION_MODE_DOME180 = 202;
+    public static final int PROJECTION_MODE_DOME230 = 203;
+    public static final int PROJECTION_MODE_DOME180_UPPER = 204;
+    public static final int PROJECTION_MODE_DOME230_UPPER = 205;
+    /**
+     * @deprecated since 2.0.4
+     * use {@link #PROJECTION_MODE_STEREO_SPHERE_VERTICAL}
+     */
+    @Deprecated
+    public static final int PROJECTION_MODE_STEREO_SPHERE = 206;
+    public static final int PROJECTION_MODE_PLANE_FIT = 207;
+    public static final int PROJECTION_MODE_PLANE_CROP = 208;
+    public static final int PROJECTION_MODE_PLANE_FULL = 209;
+    public static final int PROJECTION_MODE_MULTI_FISH_EYE_HORIZONTAL = 210;
+    public static final int PROJECTION_MODE_MULTI_FISH_EYE_VERTICAL = 211;
+    public static final int PROJECTION_MODE_STEREO_SPHERE_HORIZONTAL = 212;
+    public static final int PROJECTION_MODE_STEREO_SPHERE_VERTICAL = 213;
+    public static final int PROJECTION_MODE_CUBE = 214;
+
+    private RectF mTextureSize = new RectF(0, 0, 3328, 1664);
+    private InteractiveModeManager mInteractiveModeManager;
+    private DisplayModeManager mDisplayModeManager;
+    private ProjectionModeManager mProjectionModeManager;
+    private MDPluginManager mPluginManager;
+    private MDPickerManager mPickerManager;
+    private MDGLScreenWrapper mScreenWrapper;
+    private MDTouchHelper mTouchHelper;
+    private MD360Texture mTexture;
+    private MDGLHandler mGLHandler;
+    private MDDirectorCamUpdate mDirectorCameraUpdate;
+    private MDDirectorFilter mDirectorFilter;
+
+    private MDVRLibrary(Builder builder) {
+
+        // init main handler
+        MDMainHandler.init();
+
+        // init gl handler
+        mGLHandler = new MDGLHandler();
+
+        // init mode manager
+        initModeManager(builder);
+
+        // init plugin manager
+        initPluginManager(builder);
+
+        // init glSurfaceViews
+        initOpenGL(builder.context, builder.screenWrapper);
+
+        mTexture = builder.texture;
+
+        mTouchHelper = new MDTouchHelper(builder.context);
+
+        // init touch helper
+        initTouchHelper(builder);
+
+        // init picker manager
+        initPickerManager(builder);
+
+        // add plugin
+        initPlugin();
+    }
+
+    private void initTouchHelper(Builder builder) {
+        mTouchHelper = new MDTouchHelper(builder.context);
+        mTouchHelper.addClickListener(builder.gestureListener);
+        final UpdatePinchRunnable updatePinchRunnable = new UpdatePinchRunnable();
+        mTouchHelper.setAdvanceGestureListener(new IAdvanceGestureListener() {
+            @Override
+            public void onDrag(float distanceX, float distanceY) {
+                mInteractiveModeManager.handleDrag((int) distanceX,(int) distanceY);
+            }
+
+            @Override
+            public void onPinch(final float scale) {
+                updatePinchRunnable.setScale(scale);
+                mGLHandler.post(updatePinchRunnable);
+            }
+        });
+        mTouchHelper.setPinchEnabled(builder.pinchEnabled);
+        mTouchHelper.setPinchConfig(builder.pinchConfig);
+
+        mTouchHelper.setFlingEnabled(builder.flingEnabled);
+        mTouchHelper.setFlingConfig(builder.flingConfig);
+
+        mTouchHelper.setTouchSensitivity(builder.touchSensitivity);
+
+        mScreenWrapper.getView().setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                return mTouchHelper.handleTouchEvent(event);
+            }
+        });
+
+    }
+
+    private class UpdatePinchRunnable implements Runnable {
+        private float scale;
+
+        public void setScale(float scale) {
+            this.scale = scale;
+        }
+
+        @Override
+        public void run() {
+            List<MD360Director> directors = mProjectionModeManager.getDirectors();
+            for (MD360Director director : directors){
+                director.setNearScale(scale);
+            }
+        }
+    }
+
+    private void initModeManager(Builder builder) {
+        // init director camera update
+        mDirectorCameraUpdate = new MDDirectorCamUpdate();
+
+        // init director
+        mDirectorFilter = new MDDirectorFilter();
+        mDirectorFilter.setDelegate(builder.directorFilter);
+
+        // init ProjectionModeManager
+        ProjectionModeManager.Params projectionManagerParams = new ProjectionModeManager.Params();
+        projectionManagerParams.textureSize = mTextureSize;
+        projectionManagerParams.directorFactory = builder.directorFactory;
+        projectionManagerParams.projectionFactory = builder.projectionFactory;
+        projectionManagerParams.mainPluginBuilder = new MDMainPluginBuilder()
+                .setCameraUpdate(mDirectorCameraUpdate)
+                .setFilter(mDirectorFilter)
+                .setContentType(builder.contentType)
+                .setTexture(builder.texture);
+
+        mProjectionModeManager = new ProjectionModeManager(builder.projectionMode, mGLHandler, projectionManagerParams);
+        mProjectionModeManager.prepare(builder.context, builder.notSupportCallback);
+
+        // init DisplayModeManager
+        mDisplayModeManager = new DisplayModeManager(builder.displayMode, mGLHandler);
+        mDisplayModeManager.setBarrelDistortionConfig(builder.barrelDistortionConfig);
+        mDisplayModeManager.setAntiDistortionEnabled(builder.barrelDistortionConfig.isDefaultEnabled());
+        mDisplayModeManager.prepare(builder.context, builder.notSupportCallback);
+
+        // init InteractiveModeManager
+        InteractiveModeManager.Params interactiveManagerParams = new InteractiveModeManager.Params();
+        interactiveManagerParams.projectionModeManager = mProjectionModeManager;
+        interactiveManagerParams.mMotionDelay = builder.motionDelay;
+        interactiveManagerParams.mSensorListener = builder.sensorListener;
+        mInteractiveModeManager = new InteractiveModeManager(builder.interactiveMode, mGLHandler, interactiveManagerParams);
+        mInteractiveModeManager.prepare(builder.context, builder.notSupportCallback);
+    }
+
+    private void initPluginManager(Builder builder) {
+        mPluginManager = new MDPluginManager();
+    }
+
+    private void initPickerManager(Builder builder) {
+        mPickerManager = MDPickerManager.with()
+                .setPluginManager(mPluginManager)
+                .setDisplayModeManager(mDisplayModeManager)
+                .setProjectionModeManager(mProjectionModeManager)
+                .build();
+        setEyePickEnable(builder.eyePickEnabled);
+        mPickerManager.setEyePickChangedListener(builder.eyePickChangedListener);
+        mPickerManager.setTouchPickListener(builder.touchPickChangedListener);
+
+        // listener
+        mTouchHelper.addClickListener(mPickerManager.getTouchPicker());
+    }
+
+    private void initOpenGL(Context context, MDGLScreenWrapper screenWrapper) {
+        if (GLUtil.supportsEs2(context)) {
+            screenWrapper.init(context);
+            // Request an OpenGL ES 2.0 compatible context.
+
+            MD360Renderer renderer = MD360Renderer.with(context)
+                    .setGLHandler(mGLHandler)
+                    .setPluginManager(mPluginManager)
+                    .setProjectionModeManager(mProjectionModeManager)
+                    .setDisplayModeManager(mDisplayModeManager)
+                    .build();
+
+            // Set the renderer to our demo renderer, defined below.
+            screenWrapper.setRenderer(renderer);
+            this.mScreenWrapper = screenWrapper;
+        } else {
+            this.mScreenWrapper.getView().setVisibility(View.GONE);
+            Toast.makeText(context, "OpenGLES2 not supported.", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private void initPlugin() {
+        addPlugin(mProjectionModeManager.getDirectorUpdatePlugin());
+        addPlugin(mPickerManager.getEyePicker());
+    }
+
+    public MDDirectorCamUpdate updateCamera(){
+        return mDirectorCameraUpdate;
+    }
+
+    public MDDirectorBrief getDirectorBrief(){
+        return mProjectionModeManager.getDirectorBrief();
+    }
+
+    public void switchInteractiveMode(final Context context) {
+        mInteractiveModeManager.switchMode(context);
+    }
+
+    /**
+     * Switch Interactive Mode
+     *
+     * @param context context
+     * @param mode mode
+     *
+     * {@link #INTERACTIVE_MODE_MOTION}
+     * {@link #INTERACTIVE_MODE_TOUCH}
+     * {@link #INTERACTIVE_MODE_MOTION_WITH_TOUCH}
+     */
+    public void switchInteractiveMode(final Context context, final int mode){
+        mInteractiveModeManager.switchMode(context, mode);
+    }
+
+    public void switchDisplayMode(final Context context){
+        mDisplayModeManager.switchMode(context);
+    }
+
+    /**
+     * Switch Display Mode
+     *
+     * @param context context
+     * @param mode mode
+     *
+     * {@link #DISPLAY_MODE_GLASS}
+     * {@link #DISPLAY_MODE_NORMAL}
+     */
+    public void switchDisplayMode(final Context context, final int mode){
+        mDisplayModeManager.switchMode(context, mode);
+    }
+
+    /**
+     * Switch Projection Mode
+     *
+     * @param context context
+     * @param mode mode
+     *
+     * {@link #PROJECTION_MODE_SPHERE}
+     * {@link #PROJECTION_MODE_DOME180}
+     * and so on.
+     */
+    public void switchProjectionMode(final Context context, final int mode) {
+        mProjectionModeManager.switchMode(context, mode);
+    }
+
+    public void resetTouch(){
+        mGLHandler.post(new Runnable() {
+            @Override
+            public void run() {
+                List<MD360Director> directors = mProjectionModeManager.getDirectors();
+                for (MD360Director director : directors){
+                    director.reset();
+                }
+            }
+        });
+    }
+
+    public void resetPinch(){
+        mTouchHelper.reset();
+    }
+
+    public void resetEyePick(){
+        mPickerManager.resetEyePick();
+    }
+
+    public void setAntiDistortionEnabled(boolean enabled){
+        mDisplayModeManager.setAntiDistortionEnabled(enabled);
+    }
+
+    public boolean isAntiDistortionEnabled(){
+        return mDisplayModeManager.isAntiDistortionEnabled();
+    }
+
+    public boolean isEyePickEnable() {
+        return mPickerManager.isEyePickEnable();
+    }
+
+    public void setEyePickEnable(boolean eyePickEnable) {
+        mPickerManager.setEyePickEnable(eyePickEnable);
+    }
+
+    @Deprecated
+    public void setEyePickChangedListener(IEyePickListener listener){
+        mPickerManager.setEyePickChangedListener(new CompactEyePickAdapter(listener));
+    }
+
+    @Deprecated
+    public void setTouchPickListener(ITouchPickListener listener){
+        mPickerManager.setTouchPickListener(new CompactTouchPickAdapter(listener));
+    }
+
+    public void setEyePickChangedListener(IEyePickListener2 listener){
+        mPickerManager.setEyePickChangedListener(listener);
+    }
+
+    public void setTouchPickListener(ITouchPickListener2 listener){
+        mPickerManager.setTouchPickListener(listener);
+    }
+
+    public void setPinchScale(float scale){
+        mTouchHelper.scaleTo(scale);
+    }
+
+    public boolean isPinchEnabled(){
+        return mTouchHelper.isPinchEnabled();
+    }
+
+    public void setPinchEnabled(boolean enabled) {
+        mTouchHelper.setPinchEnabled(enabled);
+    }
+
+    public void setPinchConfig(MDPinchConfig pinchConfig){
+        mTouchHelper.setPinchConfig(pinchConfig);
+    }
+
+    public boolean isFlingEnabled(){
+        return mTouchHelper.isFlingEnabled();
+    }
+
+    public void setFlingEnabled(boolean enabled) {
+        mTouchHelper.setFlingEnabled(enabled);
+    }
+
+    public void setFlingConfig(MDFlingConfig flingConfig){
+        mTouchHelper.setFlingConfig(flingConfig);
+    }
+
+    public void setDirectorFilter(IDirectorFilter filter){
+        mDirectorFilter.setDelegate(filter);
+    }
+
+    public void addPlugin(MDAbsPlugin plugin){
+        mPluginManager.add(plugin);
+    }
+
+    public void removePlugin(MDAbsPlugin plugin){
+        mPluginManager.remove(plugin);
+    }
+
+    public void removePlugins(){
+        mPluginManager.removeAll();
+    }
+
+    public IMDHotspot findHotspotByTag(String tag){
+        return mPluginManager.findHotspotByTag(tag);
+    }
+
+    public MDAbsView findViewByTag(String tag){
+        return mPluginManager.findViewByTag(tag);
+    }
+
+    public void onTextureResize(float width, float height){
+        mTextureSize.set(0,0,width,height);
+    }
+
+    public void onOrientationChanged(Context context) {
+        mInteractiveModeManager.onOrientationChanged(context);
+    }
+
+    public void onResume(Context context){
+        mInteractiveModeManager.onResume(context);
+        if (mScreenWrapper != null){
+            mScreenWrapper.onResume();
+        }
+    }
+
+    public void onPause(Context context){
+        mInteractiveModeManager.onPause(context);
+        if (mScreenWrapper != null){
+            mScreenWrapper.onPause();
+        }
+    }
+
+    public void onDestroy(){
+        mGLHandler.post(new Runnable() {
+            @Override
+            public void run() {
+                fireDestroy();
+            }
+        });
+        mGLHandler.markAsDestroy();
+    }
+
+    private void fireDestroy(){
+        Iterator<MDAbsPlugin> iterator = mPluginManager.getPlugins().iterator();
+        while (iterator.hasNext()){
+            MDAbsPlugin plugin = iterator.next();
+            plugin.destroyInGL();
+        }
+
+        MDAbsPlugin mainPlugin = mProjectionModeManager.getMainPlugin();
+        if (mainPlugin != null){
+            mainPlugin.destroyInGL();
+        }
+
+        if (mTexture != null){
+            mTexture.destroy();
+            mTexture.release();
+            mTexture = null;
+        }
+    }
+
+    /**
+     * handle touch touch to rotate the model
+     * @deprecated deprecated since 2.0
+     *
+     * @param event
+     * @return true if handled.
+     */
+    public boolean handleTouchEvent(MotionEvent event) {
+        Log.e(TAG,"please remove the handleTouchEvent in context!");
+        return false;
+    }
+
+    public int getInteractiveMode() {
+        return mInteractiveModeManager.getMode();
+    }
+
+    public int getDisplayMode(){
+        return mDisplayModeManager.getMode();
+    }
+
+    public int getProjectionMode(){
+        return mProjectionModeManager.getMode();
+    }
+
+    public void notifyPlayerChanged(){
+        if (mTexture != null){
+            mTexture.notifyChanged();
+        }
+    }
+
+    public interface IOnSurfaceReadyCallback {
+        void onSurfaceReady(Surface surface);
+    }
+
+    public interface IBitmapProvider {
+        void onProvideBitmap(MD360BitmapTexture.Callback callback);
+    }
+
+    public interface ICubemapProvider {
+        void onProvideCubemap(MD360CubemapTexture.Callback callback, int cubeFace);
+        void onReady();
+    }
+
+    public interface IImageLoadProvider {
+        void onProvideBitmap(Uri uri, MD360BitmapTexture.Callback callback);
+    }
+
+    public interface INotSupportCallback{
+        void onNotSupport(int mode);
+    }
+
+    public interface IGestureListener {
+        void onClick(MotionEvent e);
+    }
+
+    public interface IDirectorFilter {
+        /**
+         * @param input pitch(x-axis, from -90 to 90 in degree)
+         * */
+        float onFilterPitch(float input);
+        /**
+         * @param input yaw(y-axis, from -180 to 180 in degree)
+         * */
+        float onFilterYaw(float input);
+        /**
+         * @param input roll(z-axis, from -180 to 180 in degree)
+         * */
+        float onFilterRoll(float input);
+    }
+
+    public static class DirectorFilterAdatper implements IDirectorFilter {
+
+        @Override
+        public float onFilterPitch(float input) {
+            return input;
+        }
+
+        @Override
+        public float onFilterYaw(float input) {
+            return input;
+        }
+
+        @Override
+        public float onFilterRoll(float input) {
+            return input;
+        }
+    }
+
+    interface IAdvanceGestureListener {
+        void onDrag(float distanceX, float distanceY);
+        void onPinch(float scale);
+    }
+
+    @Deprecated
+    public interface IEyePickListener {
+        void onHotspotHit(IMDHotspot hitHotspot, long hitTimestamp);
+    }
+
+    public interface IEyePickListener2 {
+        void onHotspotHit(MDHitEvent hitEvent);
+    }
+
+    @Deprecated
+    public interface ITouchPickListener {
+        void onHotspotHit(IMDHotspot hitHotspot, MDRay ray);
+    }
+
+    public interface ITouchPickListener2 {
+        void onHotspotHit(MDHitEvent hitEvent);
+    }
+
+
+    public static Builder with(Context context){
+        return new Builder(context);
+    }
+
+    /**
+     *
+     */
+    public static class Builder {
+        private int displayMode = DISPLAY_MODE_NORMAL;
+        private int interactiveMode = INTERACTIVE_MODE_MOTION;
+        private int projectionMode = PROJECTION_MODE_SPHERE;
+        private Context context;
+        private int contentType = ContentType.DEFAULT;
+        private MD360Texture texture;
+        private INotSupportCallback notSupportCallback;
+        private IGestureListener gestureListener;
+        private boolean pinchEnabled; // default false.
+        private boolean eyePickEnabled = true; // default true.
+        private BarrelDistortionConfig barrelDistortionConfig;
+        private IEyePickListener2 eyePickChangedListener;
+        private ITouchPickListener2 touchPickChangedListener;
+        private MD360DirectorFactory directorFactory;
+        private int motionDelay = SensorManager.SENSOR_DELAY_GAME;
+        private SensorEventListener sensorListener;
+        private MDGLScreenWrapper screenWrapper;
+        private IMDProjectionFactory projectionFactory;
+        private MDPinchConfig pinchConfig;
+        private IDirectorFilter directorFilter;
+        private boolean flingEnabled = true; // default true
+        private MDFlingConfig flingConfig;
+        private float touchSensitivity = 1; // default = 1
+
+        private Builder(Context context) {
+            this.context = context;
+        }
+
+        public Builder displayMode(int displayMode){
+            this.displayMode = displayMode;
+            return this;
+        }
+
+        public Builder interactiveMode(int interactiveMode){
+            this.interactiveMode = interactiveMode;
+            return this;
+        }
+
+        public Builder projectionMode(int projectionMode){
+            this.projectionMode = projectionMode;
+            return this;
+        }
+
+        public Builder ifNotSupport(INotSupportCallback callback){
+            this.notSupportCallback = callback;
+            return this;
+        }
+
+        public Builder asVideo(IOnSurfaceReadyCallback callback){
+            texture = new MD360VideoTexture(callback);
+            contentType = ContentType.VIDEO;
+            return this;
+        }
+
+        public Builder asBitmap(IBitmapProvider bitmapProvider){
+            notNull(bitmapProvider, "bitmap Provider can't be null!");
+            texture = new MD360BitmapTexture(bitmapProvider);
+            contentType = ContentType.BITMAP;
+            return this;
+        }
+
+        public Builder asCubemap(ICubemapProvider cubemapProvider){
+            notNull(cubemapProvider, "cubemap Provider can't be null!");
+            texture = new MD360CubemapTexture(cubemapProvider);
+            contentType = ContentType.CUBEMAP;
+            return this;
+        }
+
+        /**
+         * gesture listener, e.g.
+         * onClick
+         * @deprecated please use {@link #listenGesture(IGestureListener)}
+         *
+         * @param listener listener
+         * @return builder
+         */
+        @Deprecated
+        public Builder gesture(IGestureListener listener) {
+            gestureListener = listener;
+            return this;
+        }
+
+        /**
+         * enable or disable the pinch gesture
+         *
+         * @param enabled default is false
+         * @return builder
+         */
+        public Builder pinchEnabled(boolean enabled) {
+            this.pinchEnabled = enabled;
+            return this;
+        }
+
+        /**
+         * enable or disable the eye picking.
+         *
+         * @param enabled default is false
+         * @return builder
+         */
+        public Builder eyePickEnabled(boolean enabled) {
+            this.eyePickEnabled = enabled;
+            return this;
+        }
+
+        /**
+         * gesture listener, e.g.
+         * onClick
+         *
+         * @param listener listener
+         * @return builder
+         */
+        public Builder listenGesture(IGestureListener listener) {
+            gestureListener = listener;
+            return this;
+        }
+
+        /**
+         * IPickListener listener
+         *
+         * @param listener listener
+         * @return builder
+         */
+        @Deprecated
+        public Builder listenEyePick(final IEyePickListener listener){
+            this.eyePickChangedListener = new CompactEyePickAdapter(listener);
+            return this;
+        }
+
+        /**
+         * IPickListener listener
+         *
+         * @param listener listener
+         * @return builder
+         */
+        @Deprecated
+        public Builder listenTouchPick(final ITouchPickListener listener){
+            this.touchPickChangedListener = new CompactTouchPickAdapter(listener);
+            return this;
+        }
+
+        /**
+         * sensor delay in motion mode.
+         *
+         * {@link android.hardware.SensorManager#SENSOR_DELAY_FASTEST}
+         * {@link android.hardware.SensorManager#SENSOR_DELAY_GAME}
+         * {@link android.hardware.SensorManager#SENSOR_DELAY_NORMAL}
+         * {@link android.hardware.SensorManager#SENSOR_DELAY_UI}
+         *
+         * @param motionDelay default is {@link android.hardware.SensorManager#SENSOR_DELAY_GAME}
+         * @return builder
+         */
+        public Builder motionDelay(int motionDelay){
+            this.motionDelay = motionDelay;
+            return this;
+        }
+
+        public Builder sensorCallback(SensorEventListener callback){
+            this.sensorListener = callback;
+            return this;
+        }
+
+        public Builder directorFactory(MD360DirectorFactory directorFactory){
+            this.directorFactory = directorFactory;
+            return this;
+        }
+
+        public Builder projectionFactory(IMDProjectionFactory projectionFactory){
+            this.projectionFactory = projectionFactory;
+            return this;
+        }
+
+        public Builder barrelDistortionConfig(BarrelDistortionConfig config){
+            this.barrelDistortionConfig = config;
+            return this;
+        }
+
+        public Builder pinchConfig(MDPinchConfig config){
+            this.pinchConfig = config;
+            return this;
+        }
+
+        public Builder directorFilter(IDirectorFilter filter){
+            this.directorFilter = filter;
+            return this;
+        }
+
+        public Builder flingEnabled(boolean enabled){
+            this.flingEnabled = enabled;
+            return this;
+        }
+
+        public Builder flingConfig(MDFlingConfig config){
+            this.flingConfig = config;
+            return this;
+        }
+
+        public Builder touchSensitivity(float touchSensitivity){
+            this.touchSensitivity = touchSensitivity;
+            return this;
+        }
+
+        /**
+         * build it!
+         *
+         * @param glView GLSurfaceView or GLTextureView
+         * @return vr lib
+         */
+        public MDVRLibrary build(View glView){
+            if (glView instanceof GLSurfaceView){
+                return build((GLSurfaceView) glView);
+            } else if(glView instanceof GLTextureView){
+                return build((GLTextureView) glView);
+            } else {
+                throw new RuntimeException("Please ensure the glViewId is instance of GLSurfaceView or GLTextureView");
+            }
+        }
+
+        public MDVRLibrary build(GLSurfaceView glSurfaceView){
+            return build(MDGLScreenWrapper.wrap(glSurfaceView));
+        }
+
+        public MDVRLibrary build(GLTextureView glTextureView){
+            return build(MDGLScreenWrapper.wrap(glTextureView));
+        }
+
+        private MDVRLibrary build(MDGLScreenWrapper screenWrapper){
+            notNull(texture,"You must call video/bitmap function before build");
+            if (this.directorFactory == null) this.directorFactory = new MD360DirectorFactory.DefaultImpl();
+            if (this.barrelDistortionConfig == null) this.barrelDistortionConfig = new BarrelDistortionConfig();
+            if (this.pinchConfig == null) this.pinchConfig = new MDPinchConfig();
+            if (this.flingConfig == null) this.flingConfig = new MDFlingConfig();
+            this.screenWrapper = screenWrapper;
+            return new MDVRLibrary(this);
+        }
+    }
+
+    public interface ContentType {
+        int VIDEO = 0;
+        int BITMAP = 1;
+        int FBO = 2;
+        int CUBEMAP = 3;
+        int DEFAULT = VIDEO;
+    }
+}
