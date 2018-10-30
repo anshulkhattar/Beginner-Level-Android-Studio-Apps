@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Boxca</string>
+    <string name="choose_file">выберите файл</string>
+    <string name="permission_required">необходимо разрешение</string>
+    <string name="uploading_file">Загрузка файла…</string>
+    <string name="choose_file_first">Пожалуйста, сначала выберите файл</string>
+    <string name="link_copied">Ссылка скопирована!</string>
+    <string name="choose_file_to_upload">Выберите файл для загрузки..</string>
+    <string name="cannot_upload_to_server">Невозможно загрузить файл на сервер</string>
+    <string name="cannot_reach_to_file">Не удается достичь файл! Пожалуйста, выберите файл заново.</string>
+    <string name="url_error">Ошибка URL!</string>
+    <string name="cannot_read_write">Невозможно Чтение/Написание файла!</string>
+    <string name="your_file_successfully_uploaded_n_click_to_the_link_to_copy_n_expires_in_s">Ваш файл был удачно загружен! \n Нажмите для копирования ссылки! \n Истекает в течении %s </string>
+    <string name="upload">Загрузить</string>
+    <string name="upload_a_file">Загрузить файл</string>
+    <string name="file">Файл</string>
+    <string name="set_expiry">Установить истечение срока</string>
+    <string name="cancel">Отменить</string>
+    <string name="terms_of_service">Условия Использования</string>
+
+    <string-array name="days_array">
+        <item>1 день</item>
+        <item>3 дня</item>
+        <item>5 дня</item>
+        <item>1 неделя</item>
+        <item>1 месяц</item>
+        <item>1 год</item>
+    </string-array>
+</resources>

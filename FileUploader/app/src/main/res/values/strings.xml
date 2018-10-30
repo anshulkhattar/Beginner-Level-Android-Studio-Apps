@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Boxca</string>
+    <string name="choose_file">choose file</string>
+    <string name="permission_required">permission required</string>
+    <string name="uploading_file">Uploading file...</string>
+    <string name="choose_file_first">Please choose a file first</string>
+    <string name="link_copied">Link copied!</string>
+    <string name="choose_file_to_upload">Choose file to upload..</string>
+    <string name="cannot_upload_to_server">Cannot upload file to server</string>
+    <string name="cannot_reach_to_file">Cannot reach to the file! Please, choose file again.</string>
+    <string name="url_error">URL error!</string>
+    <string name="cannot_read_write">Cannot Read/Write File!</string>
+    <string name="your_file_successfully_uploaded_n_click_to_the_link_to_copy_n_expires_in_s">Your file successfully uploaded! \n Click to the link to copy! \n Expires in %s</string>
+    <string name="upload">Upload</string>
+    <string name="upload_a_file">Upload a file</string>
+    <string name="file">File</string>
+    <string name="set_expiry">Set expiry</string>
+    <string name="cancel">Cancel</string>
+    <string name="terms_of_service">Terms of Service</string>
+
+    <string-array name="days_array">
+        <item>1 day</item>
+        <item>3 days</item>
+        <item>5 days</item>
+        <item>1 week</item>
+        <item>1 month</item>
+        <item>1 year</item>
+    </string-array>
+</resources>
