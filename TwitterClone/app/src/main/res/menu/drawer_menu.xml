@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/nav_person"
+            android:title="@string/profile" />
+        <item
+            android:id="@+id/nav_lists"
+            android:icon="@drawable/nav_lists"
+            android:title="@string/lists" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/nav_moments"
+            android:title="@string/moments" />
+    </group>
+    <group android:id="@+id/setting_and_help">
+
+        <item android:title="@string/settings_and_privacy" />
+
+        <item android:title="@string/help_center" />
+
+    </group>
+</menu>

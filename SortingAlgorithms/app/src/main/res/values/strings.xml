@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SortingAlgorithms</string>
+    <string name="title">Select a sorting algorithm</string>
+    <string name="instructions">Introduce the numbers to sort</string>
+    <string name="placeholder">For example: 1, 2, … , 4, 5</string>
+    <string name="btnSort">Sort</string>
+    <string name="result">Result</string>
+    <string name="bubblesort_option">BubbleSort</string>
+    <string name="mergesort_option">MergeSort</string>
+    <string name="quicksort_option">QuickSort</string>
+</resources>
