@@ -28,5 +28,8 @@ List any ideas you may have for Beginner Level Android Apps
 - Wing-Statistical Methods Reference App
 - basic calendar app
 - Otopba - restaurant dishes review app
+- Hyper local news app in local language
+- Farming application which could act like a mediator between farmers and advisors in local languages
+- On demand market for farmers
 
 
