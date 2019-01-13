@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/CoordinatorLayout">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        style="@style/AppBarLayout"
+        android:layout_height="@dimen/app_bar_height">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            style="@style/CollapsingToolbarLayout"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:layout_collapseMode="pin"
+                    app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    style="@style/VideoImageView"
+                    android:layout_height="@dimen/video_image" />
+
+                <ImageView
+                    android:id="@+id/playicon"
+                    style="@style/PlayIcon" />
+
+                <ImageView
+                    android:id="@+id/backButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/back_button_layout_margin"
+                    android:clickable="true"
+                    android:contentDescription="@string/back_button"
+                    android:src="@drawable/ic_action_back"
+                    android:tint="@android:color/white" />
+                <ImageView
+                    android:id="@+id/shareButton"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/back_button_layout_margin"
+                    android:clickable="true"
+                    android:contentDescription="@string/back_button"
+                    android:src="@drawable/ic_share_white"
+                    android:tint="@android:color/white" />
+            </RelativeLayout>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/movies_detail_layout" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        style="@style/FAB"
+        app:elevation="@dimen/fab_elevation"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|end"
+        app:srcCompat="@drawable/ic_action_star_0" />
+
+</android.support.design.widget.CoordinatorLayout>

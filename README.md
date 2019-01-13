@@ -3,6 +3,8 @@ This repository contains various small apps that I made. Each app does something
 
 As I have seen the java projects available in Hacktoberfest challenge, there are no projects related to basic android development. So, if you have made any small app just for yourself or for learning, contribute it here. Repository contains my small projects too likelogin app using firebase.
 
+Another use of this repository is that you can contribute ideas for android apps and if anyone like the idea they can pick it start working on that idea.
+
 # How to get started
 1. Fork this repository (Click the Fork button in the top right of this page, click your Profile Image).
 2.Clone your fork down to your local machine.

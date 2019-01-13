@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardElevation="@dimen/movie_card_elevation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/movie_poster_grid_height"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/image"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:id="@+id/movie_item_footer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/theme_primary"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/keyline_1"
+            android:paddingLeft="@dimen/keyline_1"
+            android:paddingRight="@dimen/keyline_1"
+            android:paddingTop="@dimen/keyline_1">
+
+            <TextView
+                android:id="@+id/movie_item_title"
+                style="@style/MovieItemText"
+                android:lines="1"
+                android:textColor="@color/body_text_white"
+                android:textSize="@dimen/movie_title_font_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/movie_item_genres"
+                style="@style/MovieItemText"
+                android:textColor="@color/body_text_1_inverse"
+                android:textSize="@dimen/movie_releaseDate_font_size" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

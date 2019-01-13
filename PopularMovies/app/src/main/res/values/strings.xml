@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Popular Movies</string>
+    <string name="action_settings">Settings</string>
+    <string name="sort_by_popularity">Sort By Popularity</string>
+    <string name="sort_by_rating">Sort By Rating</string>
+    <string name="no_article_selected">No Movies Selected</string>
+    <string name="image">image</string>
+    <string name="movie_item_btn_favorite_desc">favorite</string>
+    <string name="video_image">video_image</string>
+    <string name="play_icon">play_icon</string>
+    <string name="back_button">back_button</string>
+    <string name="action">Action</string>
+    <string name="movie_poster">movie_poster</string>
+    <string name="favorites">Favorites</string>
+    <string name="emo_image">emo_image</string>
+    <string name="noreview">No Reviews available for this movie</string>
+    <string name="menu_delete">Delete</string>
+    <string name="empty_view_title_text">It\'s a bit lonely here.</string>
+    <string name="empty_view_subtitle_text">Load movies by reload button</string>
+    <string name="fav">Favorites</string>
+    <string name="celebimage">celebImage</string>
+    <string name="heart">heart</string>
+    <string name="synopsis">Synopsis</string>
+    <string name="cast">Cast</string>
+    <string name="reviews">Reviews</string>
+    <string name="errorimage">errorImage</string>
+    <string name="go_back_and_add_movies">Go back and Add Movies</string>
+    <string name="come_back_later_with_internet_connection">Come back later with Internet Connection</string>
+    <string name="as">As</string>
+    <string name="transition_photo">photoTransition</string>
+</resources>
