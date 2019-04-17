@@ -6,7 +6,7 @@ As I have seen the java projects available in Hacktoberfest challenge, there are
 Another use of this repository is that you can contribute ideas for android apps and if anyone like the idea they can pick it start working on that idea.
 
 # How to get started
-1. Fork this repository (Click the Fork button in the top right of this page, click your Profile Image).
+1. Fork this repository (Click the Fork button in the top right of this page).
 2. Clone your fork down to your local machine.
 3. Create a branch for a new feature using "git checkout -b feature/branch-name".
 4. Make your changes using the following commands - "git add ."   "git commit -m 'commit message'"    "git push origin branch-name".
