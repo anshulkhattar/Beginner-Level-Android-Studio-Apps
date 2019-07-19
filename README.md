@@ -9,10 +9,15 @@ Another use of this repository is that you can contribute ideas for android apps
 1. Fork this repository (Click the Fork button in the top right of this page).
 2. Clone your fork down to your local machine.
 3. Create a branch for a new feature using "git checkout -b feature/branch-name".
-4. Make your changes using the following commands - "git add ."   "git commit -m 'commit message'"    "git push origin branch-name".
+4. Make your changes using the following commands - 
+    1. **git add .**   
+    2. **git commit -m 'commit message'**   
+    3. **git push origin branch-name**
 5. Create a New Pull Request from your forked repository.
 6. Comment on the issue using the given format - "Name-AppName-PullRequestId".
 7. Wait for your PR review and merge approval!
 
 
 ⭐⭐Star this repository if you liked the idea and had fun.⭐⭐
+
+###### Checkout my profile for my other projects.
