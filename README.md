@@ -1,7 +1,7 @@
 # Beginner-Level-Android-Studio-Apps
 This repository contains various small apps that I made. Each app does something different from the other.It's the best place to find basic code for everything related to android apps for beginner level. 
 
-As I have seen the java projects available in Hacktoberfest challenge, there are no projects related to basic android development. So, if you have made any small app just for yourself or for learning, contribute it here. Repository contains my small projects too like a login app using firebase and a basic mapbox example.
+As I have seen the java projects available in Hacktoberfest challenge, there are no projects related to basic android development. So, if you have made any small app just for yourself or for learning, contribute it here. Repository contains my small projects too like a login app using firebase ,a radiogroup and intent example and a basic mapbox example.
 
 Another use of this repository is that you can contribute ideas for android apps and if anyone like the idea they can pick it start working on that idea.
 
