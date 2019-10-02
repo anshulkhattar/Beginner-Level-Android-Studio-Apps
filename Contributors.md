@@ -30,3 +30,6 @@ To add your name to the repository contributors, Use this template below:
 [Ashish Yadav](https://github.com/ay3524)
 
 [Anoop Moothedath](https://github.com/Crazyfox98)
+
+[Yohan Malshika](https://github.com/yohanym95)
+
