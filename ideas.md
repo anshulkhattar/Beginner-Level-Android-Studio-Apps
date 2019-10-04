@@ -31,3 +31,5 @@ List any ideas you may have for Beginner Level Android Apps
 - Wifi noise indicator - to detect wireless networks in the area and their noise level (interference)
 - Color Filter - see what your screen would look like if you were affected with one of the many different forms of color blindness from protanomaly (reduced sensitivity to red light), deuteranomaly (reduced sensitivity to green light) tritanomaly (reduced sensitivity to blue light).
 - Vibration Sensor - turn your mobile into a mini earthquake sensor.
+
+- CrytoCurrency Tracker - Simple app to get real time cryto and Fiat currency price and also comes with a currency exchange calculator for any amount. 
