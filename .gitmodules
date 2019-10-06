@@ -1,0 +1,3 @@
+[submodule "Hotel_Book_Recommendation"]
+	path = Hotel_Book_Recommendation
+	url = https://github.com/jagzmz/HotelBookingRecomendation.git
