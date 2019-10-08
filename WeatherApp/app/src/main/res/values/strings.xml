@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MyWeatherApp</string>
+    <string name="curr_temp">Temperature : </string>
+    <string name="tv_desc">Description : </string>
+    <string name="tv_humid">Humidity : </string>
+</resources>
