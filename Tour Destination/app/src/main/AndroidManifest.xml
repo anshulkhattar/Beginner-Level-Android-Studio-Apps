@@ -57,27 +57,8 @@
             android:name=".activity.DetailEventActivity"
             android:label="@string/title_activity_detail_event"
             android:theme="@style/AppTheme.NoActionBar" />
-<<<<<<< HEAD
-        <activity android:name=".activity.BuatEventActivity" />
-        <activity
-            android:name=".tenant.MainTenantActivity"
-            android:label="@string/title_activity_main_tenant"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".tenant.TambahProdukActivity" />
-        <activity android:name=".tenant.TambahGalleryActivity" />
-        <activity android:name=".tenant.TambahFasilitasActivity" />
-        <activity android:name=".tenant.PengaduanTenantActivity" />
-        <activity android:name=".tenant.ReviewTenantActivity" />
-        <activity android:name=".tenant.EventTenantActivity" />
-        <activity android:name=".tenant.TambahEventActivity" />
-        <activity android:name=".tenant.ProdukTenantActivity" />
-        <activity android:name=".tenant.GalleryTenantActivity" />
-        <activity android:name=".tenant.FasilitasTenantActivity" />
-        <activity android:name=".activity.DetailGalleryActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-=======
+
         <activity android:name=".activity.BuatEventActivity"></activity>
->>>>>>> dfdb3d667b3e9a706f923bbb336de0a7f7ed64e9
     </application>
 
 </manifest>
