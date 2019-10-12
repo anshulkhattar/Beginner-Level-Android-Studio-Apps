@@ -5,7 +5,7 @@
 
 package com.justudin.calculator;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import java.text.NumberFormat;
 import android.view.View;
