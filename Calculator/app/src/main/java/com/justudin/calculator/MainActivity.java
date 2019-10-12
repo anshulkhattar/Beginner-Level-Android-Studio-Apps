@@ -5,6 +5,7 @@
 
 package com.justudin.calculator;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -59,6 +60,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         binding.sd.setEnabled(false);
     }
 
+    @SuppressLint("SetTextI18n")
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.satu:
@@ -127,7 +129,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 switch (op) {
                     case 1:
                         txt_layar.setText(n.format(angka1 + angka2));
-                        proses_layar.setText(Double.toString(angka1) + "+" + Double.toString(angka2));
+                        proses_layar.setText(angka1 + "+" + angka2);
                         break;
                     case 2:
                         txt_layar.setText(n.format(angka1 - angka2));
