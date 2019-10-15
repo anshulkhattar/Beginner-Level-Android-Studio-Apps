@@ -35,8 +35,9 @@ To add your name to the repository contributors, Use this template below:
 
 [Yohan Malshika](https://github.com/yohanym95)
 
-
 [Nilesh](https://github.com/nilesh)
 
-[Mbah Derek] (https://github.com/derekdunes) 
+[Mbah Derek] (https://github.com/derekdunes)
+
+[Celeste Zapata](https://github.com/zetadeceleste)
 
