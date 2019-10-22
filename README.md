@@ -1,4 +1,4 @@
-![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
+![](https://img.shields.io/github/stars/anshulkhattar/Beginner-Level-Android-Studio-Apps) ![](https://img.shields.io/github/forks/anshulkhattar/Beginner-Level-Android-Studio-Apps) ![](https://img.shields.io/github/tag/anshulkhattar/Beginner-Level-Android-Studio-Apps) ![](https://img.shields.io/github/release/anshulkhattar/Beginner-Level-Android-Studio-Apps) ![](https://img.shields.io/github/issues/pandao/anshulkhattar/Beginner-Level-Android-Studio-Apps) ![](https://img.shields.io/bower/v/editor.md.svg)
 
 # Beginner-Level-Android-Studio-Apps
 This repository contains various small apps that I made. Each app does something different from the other.It's the best place to find basic code for everything related to android apps for beginner level. 
