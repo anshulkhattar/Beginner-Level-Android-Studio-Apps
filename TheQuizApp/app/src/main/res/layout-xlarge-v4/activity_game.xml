@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout android:orientation="horizontal" android:id="@id/layoutquestion" android:background="@drawable/question_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linearLayoutTime" android:background="@drawable/timer_on" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="45.0dip">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@android:color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/timerTextView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/remaining_time" />
+        </LinearLayout>
+        <TextView android:textSize="20.0sp" android:textColor="#ff004269" android:gravity="center" android:layout_gravity="center" android:id="@id/questionTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginRight="50.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/buttons" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_weight="2.0">
+        <Button android:id="@id/answerAButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" style="@style/btnStyleGameXLarge" />
+        <Button android:id="@id/answerBButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" style="@style/btnStyleGameXLarge" />
+        <Button android:id="@id/answerCButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" style="@style/btnStyleGameXLarge" />
+        <Button android:id="@id/answerDButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" style="@style/btnStyleGameXLarge" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">StarlenTask</string>
+    <string name="access_token" translatable="false">pk.eyJ1Ijoia2hhdHRhcmFuc2h1bCIsImEiOiJjamx3b2hzZmgwMXE1M3ByNWNzcDRoMzMyIn0.INn9t7aKdgTYrUmmEe7wgw</string>
+</resources>

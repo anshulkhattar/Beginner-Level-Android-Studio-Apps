@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="3"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="ay3524.com.popularmovies.activity.FavActivity"
+    android:baselineAligned="true">
+
+    <fragment
+        android:id="@+id/healinesfragment1"
+        class="ay3524.com.popularmovies.fragments.MoviesFavoriteListFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:layout="@layout/movie_fav_layout" />
+
+    <fragment
+        android:id="@+id/articlesfragment1"
+        class="ay3524.com.popularmovies.fragments.MoviesDetailsFavFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        tools:layout="@layout/movies_detail_layout" />
+</LinearLayout>

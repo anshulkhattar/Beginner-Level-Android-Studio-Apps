@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/colorBackgroundButton"
+    app:cardCornerRadius="@dimen/default_card_radius"
+    app:cardUseCompatPadding="true">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/mod_2"
+        android:paddingEnd="@dimen/mod_2"
+        android:paddingTop="@dimen/mod_2"
+        android:paddingBottom="@dimen/mod_1"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_project_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_body_1"
+            tools:text="DependencyCheck" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_project_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mod_2"
+            android:ellipsize="end"
+            android:maxLength="120"
+            android:maxLines="3"
+            android:textColor="@color/colorWhite"
+            tools:text="OWASP dependency-check is a software composition analysis utility that detects publicly disclosed vulnerabilities in application dependencies" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_project_url"
+            style="@style/Widget.MaterialComponents.Chip.Action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/mod_1"
+            android:text="@string/learn_more"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_caption"
+            app:chipBackgroundColor="@color/colorCustomBlackSecondary"
+            app:chipIcon="@drawable/ic_globe"
+            app:chipIconTint="@color/colorWhite" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</com.google.android.material.card.MaterialCardView>

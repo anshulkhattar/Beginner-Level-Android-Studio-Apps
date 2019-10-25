@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView android:layout_gravity="center" android:id="@id/imageViewLogoLevel" android:layout_width="120.0dip" android:layout_height="120.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/logo" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Current Subject : " />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textColor="@color/red"
+        android:layout_marginRight="40dp"
+        android:text="TextView" />
+
+
+    <LinearLayout android:orientation="vertical" android:id="@id/buttons" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="40.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="40.0dip" android:layout_weight="1.0">
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@id/buttonEasy" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="@string/easy" android:onClick="comp" style="@style/btnStyleLevelSmall" />
+
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@id/buttonMedium" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/medium" android:onClick="phy"
+            style="@style/btnStyleLevelSmall" />
+
+        <Button android:gravity="center" android:layout_gravity="center"
+            android:id="@id/buttonHard" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_marginTop="5.0dip"
+            android:text="@string/hard" android:onClick="chem" style="@style/btnStyleMainSmall" />
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

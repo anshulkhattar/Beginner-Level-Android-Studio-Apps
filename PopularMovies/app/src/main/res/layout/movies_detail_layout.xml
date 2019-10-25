@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="horizontal"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_scrolling">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:transitionName="@string/transition_photo"
+                android:id="@+id/poster"
+                android:layout_width="@dimen/posterWidth"
+                android:layout_height="@dimen/posterHeight"
+                android:layout_marginLeft="@dimen/detail_poster_margin_left"
+                android:layout_marginTop="@dimen/line_marginTop"
+                android:contentDescription="@string/movie_poster"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/thirteendp"
+                    android:layout_marginTop="@dimen/detaiLtitle_marginTop"
+                    android:maxLines="4"
+                    android:textColor="@color/material_black"
+                    android:textSize="@dimen/nineteensp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/line_marginTop"
+                    android:layout_marginTop="@dimen/sevendp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/heart"
+                        android:src="@drawable/ic_favorite"
+                        android:tint="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/threedp"
+                        android:textColor="#000"
+                        android:textSize="@dimen/nineteensp" />
+
+                    <TextView
+                        android:id="@+id/votes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/line_marginTop"
+                        android:textSize="@dimen/fourteensp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/releaseDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/thirteendp"
+                    android:layout_marginTop="@dimen/fivedp"
+                    android:alpha="0.7"
+                    android:maxLines="1"
+                    android:textColor="@color/material_black"
+                    android:textSize="@dimen/fifteensp" />
+
+                <TextView
+                    android:id="@+id/genre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/thirteendp"
+                    android:layout_marginRight="@dimen/line_marginTop"
+                    android:layout_marginTop="@dimen/fivedp"
+                    android:alpha="0.7"
+                    android:maxLines="3"
+                    android:textColor="@color/material_black"
+                    android:textSize="@dimen/fifteensp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:layout_marginLeft="@dimen/line_marginTop"
+            android:layout_marginRight="@dimen/line_marginTop"
+            android:layout_marginTop="@dimen/line_marginTop"
+            android:alpha="0.5"
+            android:background="@color/material_black" />
+
+        <TextView
+            android:id="@+id/syno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/line_marginTop"
+            android:layout_marginTop="@dimen/eightdp"
+            android:text="@string/synopsis"
+            android:textColor="@color/material_red500"
+            android:textSize="@dimen/twentytwosp" />
+
+        <TextView
+            android:id="@+id/plot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/line_marginTop"
+            android:alpha="0.7"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/material_black"
+            android:textSize="@dimen/plot_fontSize" />
+
+        <View
+            android:id="@+id/synopsisBelowLine"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:layout_marginLeft="@dimen/line_marginTop"
+            android:layout_marginRight="@dimen/line_marginTop"
+            android:layout_marginTop="@dimen/line_marginTop"
+            android:alpha="0.5"
+            android:background="@color/material_black" />
+
+        <TextView
+            android:id="@+id/cast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/line_marginTop"
+            android:layout_marginTop="@dimen/eightdp"
+            android:text="@string/cast"
+            android:textColor="@color/material_red500"
+            android:textSize="@dimen/twentytwosp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/castList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/line_marginTop"
+            android:layout_marginRight="@dimen/line_marginTop"
+            android:layout_marginTop="@dimen/thirteendp"
+            android:scrollbars="horizontal">
+        </android.support.v7.widget.RecyclerView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:layout_marginLeft="@dimen/line_marginTop"
+            android:layout_marginRight="@dimen/line_marginTop"
+            android:layout_marginTop="@dimen/line_marginTop"
+            android:alpha="0.5"
+            android:background="@color/material_black" />
+
+        <TextView
+            android:id="@+id/review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/plot_margin"
+            android:layout_marginLeft="@dimen/line_marginTop"
+            android:text="@string/reviews"
+            android:textColor="@color/material_red500"
+            android:textSize="@dimen/twentytwosp" />
+
+        <LinearLayout
+            android:id="@+id/linearlayoutreviews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/eightdp">
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

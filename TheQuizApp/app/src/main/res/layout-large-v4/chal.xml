@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:gravity="center" android:layout_gravity="center" android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/liniarLayout1"
+            android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/layoutscoreEasy" android:background="@drawable/question_bg" android:layout_width="370.0dip"
+                android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                <TextView android:textSize="28.0sp" android:textColor="#ffff0000" android:id="@id/textViewTitleEasy"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Contest" android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+                <TextView android:textSize="18.0sp" android:textColor="#ff004269"
+                    android:id="@id/textViewCorrectEasy" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginLeft="35.0dip" android:layout_marginTop="15.0dip"
+                    android:text="Top Scorers will be awarded paytm cash every month. Keep updating the App." android:layout_below="@id/textViewTitleEasy"
+                    android:layout_alignParentLeft="true" />
+                 </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/colorCustomBlackSecondary">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/mod_2">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_profile_avatar"
+                android:layout_width="@dimen/image_size_med"
+                android:layout_height="@dimen/image_size_med"
+                app:srcCompat="@mipmap/ic_launcher_round" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/mod_2"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Courtesy of"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/font_caption" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_profile_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/font_body_1"
+                    app:chipIcon="@drawable/ic_globe"
+                    tools:text="Jeremy Long" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_profile_url"
+                    style="@style/Widget.MaterialComponents.Chip.Action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="jeremylong"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/font_caption"
+                    app:chipBackgroundColor="@color/colorBackgroundButton"
+                    app:chipIcon="@drawable/ic_globe"
+                    app:chipIconTint="@color/colorWhite" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_preview_repo"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:text="@string/preview_repository"
+            android:textColor="@color/colorCustomRed" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</com.google.android.material.card.MaterialCardView>
+
+
+        
