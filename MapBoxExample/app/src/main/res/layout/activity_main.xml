@@ -1,20 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.widget.RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".MainActivity">
 
-    <com.mapbox.mapboxsdk.maps.MapView
-        android:layout_width="match_parent"
-        android:id="@+id/mapview"
-        android:layout_height="match_parent"
-        mapbox:mapbox_cameraTargetLat="20.5937"
-        mapbox:mapbox_cameraTargetLng="78.9629"
-        mapbox:mapbox_styleUrl="mapbox://styles/mapbox/streets-v10"
-        mapbox:mapbox_cameraZoom="4"
-        />
 
-</android.widget.RelativeLayout>
+
+    <Button
+
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#00BCD4"
+        android:enabled="false"
+        android:text="Start Navigating"
+        android:textColor="#fff" />
+
+
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        mapbox:mapbox_cameraZoom="8">
+
+    </com.mapbox.mapboxsdk.maps.MapView>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
