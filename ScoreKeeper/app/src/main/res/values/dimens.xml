@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="scores_h">0dp</dimen>
+    <dimen name="scores_mt">40dp</dimen>
+    <dimen name="teama_ml">150dp</dimen>
+    <dimen name="score_txt">54sp</dimen>
+    <dimen name="teamb_padding">20dp</dimen>
+    <dimen name="buttons_ll_ml">35dp</dimen>
+    <dimen name="buttons_c1_pl">40dp</dimen>
+    <dimen name="score_ts">23sp</dimen>
+    <dimen name="score_mt">15dp</dimen>
+</resources>
