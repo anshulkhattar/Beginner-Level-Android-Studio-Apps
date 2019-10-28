@@ -1,0 +1,9 @@
+Avengers Assemble App
+
+
+This app contains a list of Avengers.
+Clicking on any name from the list takes the user to a new activity which contains the Avenger name and picture.
+
+Things to learn- intent, adding image to your app, listviews and array adapter
+
+This app is made using kotlin.
