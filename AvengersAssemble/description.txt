@@ -6,4 +6,4 @@ Clicking on any name from the list takes the user to a new activity which contai
 
 Things to learn- intent, adding image to your app, listviews and array adapter
 
-This app is made using kotlin.
+This app is made using kotlin
