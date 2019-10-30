@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">GitTrends</string>
+    <string name="learn_more">Learn more</string>
+    <string name="preview_repository">Preview Repository</string>
+    <string name="title_activity_preview">PreviewActivity</string>
+</resources>

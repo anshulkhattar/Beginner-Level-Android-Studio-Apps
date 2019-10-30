@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements Calls.OnFragmentI
         });
 
 
-        TabLayout tabLayout = findViewById(R.id.tablayout);
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tablayout);
 
         tabLayout.setTabGravity(tabLayout.GRAVITY_FILL);
 

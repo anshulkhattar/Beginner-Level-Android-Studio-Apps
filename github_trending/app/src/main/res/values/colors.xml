@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">@color/colorCustomBlack</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <!--colors-->
+    <color name="colorWhite">#fff</color>
+    <color name="colorCustomWhite">#f5f6f7</color>
+    <color name="colorCustomRed">#E85959</color>
+    <color name="colorCustomBlack">#4a4a4a</color>
+    <color name="colorCustomBlackSecondary">#2a2a2a</color>
+    <color name="colorCustomBlue">#556799</color>
+
+    <!--textColor-->
+    <color name="colorTextPrimary">@color/colorWhite</color>
+    <color name="colorTextSecondary">@color/colorCustomBlackSecondary</color>
+    <color name="colorTextThird">@color/colorCustomBlue</color>
+
+    <!--background-->
+    <color name="colorBackgroundMain">@color/colorCustomBlackSecondary</color>
+    <color name="colorBackgroundError">@color/colorCustomRed</color>
+    <color name="colorBackgroundButton">@color/colorCustomBlack</color>
+</resources>

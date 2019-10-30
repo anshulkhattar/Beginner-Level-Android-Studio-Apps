@@ -1,3 +1,5 @@
+
 [submodule "Lifecycleaware-adapter"]
 	path = Lifecycleaware-adapter
 	url = https://github.com/ajaypro/Lifecycleaware-adapter.git
+

@@ -1,0 +1,276 @@
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/success"
+            android:visibility="gone"
+            android:background="@color/successColor"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+        <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/cardView"
+                android:layout_centerVertical="true"
+                android:layout_margin="16dp">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/successColor"
+                        android:textStyle="bold"
+                        android:layout_marginTop="12dp"
+                        android:textAlignment="center"
+                        android:id="@+id/textSuccess"
+                        android:text="@string/your_file_successfully_uploaded_n_click_to_the_link_to_copy_n_expires_in_s"/>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textSuccess"
+                        android:layout_marginTop="12dp"
+                        android:id="@+id/link"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:layout_marginBottom="12dp"
+                        android:text="https://file.io"
+                        android:inputType="textUri"/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <Space
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/cardView"
+                android:id="@+id/space"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/closeSuccessPopup"
+                android:visibility="visible"
+                android:src="@drawable/ic_clear_black_24dp"
+                android:layout_below="@+id/cardView"
+                android:layout_toStartOf="@+id/space"
+                android:layout_toLeftOf="@+id/space"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/shareSuccessPopup"
+                android:visibility="visible"
+                android:src="@drawable/ic_share_black_24dp"
+                android:layout_below="@+id/cardView"
+                android:layout_toRightOf="@+id/space"
+                />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:id="@+id/uploadToServer"
+            android:visibility="visible"
+            android:background="@color/backgroundColor"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/b_upload"
+                android:text="@string/upload"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:textSize="20sp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:background="#039be5"/>
+
+        <TextView
+                android:text="@string/choose_file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5"
+                android:textAlignment="center"
+                android:fontFamily="monospace"
+                android:textColor="@android:color/background_light"
+                android:layout_below="@+id/ivAttachment"
+                android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/uploadPopup"
+                android:visibility="gone"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/b_upload"
+                android:layout_toEndOf="@+id/b_upload"
+                android:layout_toLeftOf="@+id/b_upload"
+                android:layout_toStartOf="@+id/b_upload">
+
+            <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="0dp"
+                    android:background="@color/cardview_light_background">
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true">
+
+                        <TextView
+                                android:text="@string/upload_a_file"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="20sp"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginRight="12dp"
+                                android:layout_marginEnd="12dp"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginBottom="8dp"
+                                android:id="@+id/textView7"/>
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="#9b9b9b"
+                                android:id="@+id/xett"
+                                android:layout_below="@id/textView7"
+                                android:layout_alignLeft="@+id/textView7"
+                                android:layout_alignStart="@+id/textView7"
+                                android:layout_alignRight="@+id/textView7"
+                                android:layout_alignEnd="@+id/textView7"/>
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/file"
+                                android:layout_below="@id/xett"
+                                android:id="@+id/file"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginRight="12dp"
+                                android:layout_marginEnd="12dp"
+                                android:layout_marginLeft="12dp"/>
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/file"
+                                android:id="@+id/fileName"
+                                android:textSize="14sp"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginRight="12dp"
+                                android:layout_marginEnd="12dp"
+                                android:layout_marginLeft="12dp"
+                                android:layout_below="@id/file"/>
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/set_expiry"
+                                android:id="@+id/setExiry"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginRight="12dp"
+                                android:layout_marginEnd="12dp"
+                                android:layout_marginLeft="12dp"
+                                android:layout_below="@id/fileName"/>
+
+                        <Spinner
+                                android:layout_width="150dp"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="3dp"
+                                android:id="@+id/spinner"
+                                android:layout_below="@id/setExiry"
+                                android:layout_toLeftOf="@+id/cancel_action"
+                                android:layout_alignLeft="@+id/setExiry"
+                                android:layout_alignStart="@+id/setExiry"/>
+
+                        <Button
+                                android:text="@string/upload"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/uploadButton"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:textColor="@color/successColor"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginRight="12dp"
+                                android:layout_marginEnd="12dp"
+                                android:layout_marginLeft="12dp"
+                                android:layout_below="@+id/setExiry"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"/>
+
+                        <Button
+                                android:text="@string/cancel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cancel_action"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:textColor="@color/errorColor"
+                                android:layout_below="@+id/setExiry"
+                                android:layout_toLeftOf="@+id/uploadButton"
+                                android:layout_toStartOf="@+id/uploadButton"/>
+
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+        <ImageView
+                android:id="@+id/ivAttachment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_cloud_upload_black_24dp"
+                android:paddingBottom="8dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+        <TextView
+                android:text="@string/terms_of_service"
+                android:textColor="@color/cardview_light_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="12sp"
+                android:layout_marginBottom="5dp"
+                android:textAlignment="center"
+                android:fontFamily="monospace"
+                android:id="@+id/textView"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

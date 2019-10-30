@@ -2,182 +2,190 @@
   ~ Coded by justudin <www.github.com/justudin>
   ~ MIT (c) 2018.
   -->
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_margin="2pt" >
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <EditText
-        android:id="@+id/proses_layar"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="left"
-        android:inputType="text" />
-    <TextView
-        android:id="@+id/label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="left"
-        android:textSize="12pt"
-        android:layout_below="@+id/proses_layar"
-        android:text="@string/sd"/>
-    <EditText
-        android:id="@+id/txt_layar"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="right"
-        android:layout_toRightOf="@+id/label"
-        android:layout_below="@+id/proses_layar"
-        android:inputType="text" />
+    <data>
 
-    <Button
-        android:id="@+id/plus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txt_layar"
-        android:text="@string/plus"
-        android:width="10pt" />
+    </data>
 
-    <Button
-        android:id="@+id/min"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txt_layar"
-        android:layout_toRightOf="@+id/plus"
-        android:text="@string/min"
-        android:width="10pt" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="2pt">
 
-    <Button
-        android:id="@+id/kali"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txt_layar"
-        android:layout_toRightOf="@+id/min"
-        android:text="@string/kali"
-        android:width="10pt" />
+        <EditText
+            android:id="@+id/proses_layar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:inputType="text" />
 
-    <Button
-        android:id="@+id/bagi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txt_layar"
-        android:layout_toRightOf="@+id/kali"
-        android:text="@string/bagi"
-        android:width="10pt" />
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="12pt"
+            android:layout_below="@+id/proses_layar"
+            android:text="@string/sd" />
 
-    <Button
-        android:id="@+id/c"
-        android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
-        android:layout_above="@+id/sd"
-        android:layout_below="@+id/txt_layar"
-        android:layout_toRightOf="@+id/bagi"
-        android:height="61.5pt"
-        android:text="@string/c" />
+        <EditText
+            android:id="@+id/txt_layar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_toRightOf="@+id/label"
+            android:layout_below="@+id/proses_layar"
+            android:inputType="text" />
 
-    <Button
-        android:id="@+id/satu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/plus"
-        android:text="@string/sat"
-        android:width="10pt" />
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_layar"
+            android:text="@string/plus"
+            android:width="10pt" />
 
-    <Button
-        android:id="@+id/dua"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/plus"
-        android:layout_toRightOf="@+id/satu"
-        android:text="@string/dua"
-        android:width="10pt" />
+        <Button
+            android:id="@+id/min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_layar"
+            android:layout_toRightOf="@+id/plus"
+            android:text="@string/min"
+            android:width="10pt" />
 
-    <Button
-        android:id="@+id/tiga"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/plus"
-        android:layout_toRightOf="@+id/dua"
-        android:text="@string/tig"
-        android:width="10pt" />
+        <Button
+            android:id="@+id/kali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_layar"
+            android:layout_toRightOf="@+id/min"
+            android:text="@string/kali"
+            android:width="10pt" />
 
-    <Button
-        android:id="@+id/empat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/plus"
-        android:layout_toRightOf="@+id/tiga"
-        android:text="@string/emp"
-        android:width="10pt" />
+        <Button
+            android:id="@+id/bagi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_layar"
+            android:layout_toRightOf="@+id/kali"
+            android:text="@string/bagi"
+            android:width="10pt" />
 
-    <Button
-        android:id="@+id/lima"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/satu"
-        android:text="@string/lim"
-        android:width="10pt" />
+        <Button
+            android:id="@+id/c"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/sd"
+            android:layout_below="@+id/txt_layar"
+            android:layout_toRightOf="@+id/bagi"
+            android:height="61.5pt"
+            android:text="@string/c" />
 
-    <Button
-        android:id="@+id/enam"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/satu"
-        android:layout_toRightOf="@+id/lima"
-        android:text="@string/en"
-        android:width="10pt" />
+        <Button
+            android:id="@+id/satu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plus"
+            android:text="@string/sat"
+            android:width="10pt" />
 
-    <Button
-        android:id="@+id/tuj"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/satu"
-        android:layout_toRightOf="@+id/enam"
-        android:text="@string/tuj"
-        android:width="10pt" />
+        <Button
+            android:id="@+id/dua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plus"
+            android:layout_toRightOf="@+id/satu"
+            android:text="@string/dua"
+            android:width="10pt" />
 
-    <Button
-        android:id="@+id/delapan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/satu"
-        android:layout_toRightOf="@+id/tuj"
-        android:text="@string/del"
-        android:width="10pt" />
+        <Button
+            android:id="@+id/tiga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plus"
+            android:layout_toRightOf="@+id/dua"
+            android:text="@string/tig"
+            android:width="10pt" />
 
-    <Button
-        android:id="@+id/sembilan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/lima"
-        android:text="@string/sem"
-        android:width="10pt" />
+        <Button
+            android:id="@+id/empat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plus"
+            android:layout_toRightOf="@+id/tiga"
+            android:text="@string/emp"
+            android:width="10pt" />
 
-    <Button
-        android:id="@+id/nol"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/lima"
-        android:layout_toRightOf="@+id/sembilan"
-        android:text="@string/nol"
-        android:width="10pt" />
+        <Button
+            android:id="@+id/lima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/satu"
+            android:text="@string/lim"
+            android:width="10pt" />
 
-    <Button
-        android:id="@+id/koma"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/lima"
-        android:layout_toRightOf="@+id/nol"
-        android:text="@string/koma"
-        android:width="10pt" />
+        <Button
+            android:id="@+id/enam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/satu"
+            android:layout_toRightOf="@+id/lima"
+            android:text="@string/en"
+            android:width="10pt" />
 
-    <Button
-        android:id="@+id/sd"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/lima"
-        android:layout_toRightOf="@+id/koma"
-        android:text="@string/sd" />
+        <Button
+            android:id="@+id/tuj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/satu"
+            android:layout_toRightOf="@+id/enam"
+            android:text="@string/tuj"
+            android:width="10pt" />
 
-</RelativeLayout>
+        <Button
+            android:id="@+id/delapan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/satu"
+            android:layout_toRightOf="@+id/tuj"
+            android:text="@string/del"
+            android:width="10pt" />
+
+        <Button
+            android:id="@+id/sembilan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lima"
+            android:text="@string/sem"
+            android:width="10pt" />
+
+        <Button
+            android:id="@+id/nol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lima"
+            android:layout_toRightOf="@+id/sembilan"
+            android:text="@string/nol"
+            android:width="10pt" />
+
+        <Button
+            android:id="@+id/koma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lima"
+            android:layout_toRightOf="@+id/nol"
+            android:text="@string/koma"
+            android:width="10pt" />
+
+        <Button
+            android:id="@+id/sd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lima"
+            android:layout_toRightOf="@+id/koma"
+            android:text="@string/sd" />
+
+    </RelativeLayout>
+</layout>

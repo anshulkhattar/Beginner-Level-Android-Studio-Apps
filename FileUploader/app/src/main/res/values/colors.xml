@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F44336</color>
+    <color name="colorPrimaryDark">#2196F3</color>
+    <color name="colorAccent">#FF4081</color>
+    
+    <!--<color name="backgroundColor">#4A97E0</color>-->
+    <!--<color name="successColor">#2abc25</color>-->
+    <!--<color name="errorColor">#ff404d</color>-->
+    <!--<color name="steadyColor">#ffa500</color>-->
+
+    <color name="backgroundColor">#2196F3</color>
+    <color name="successColor">#4CAF50</color>
+    <color name="errorColor">#F44336</color>
+    <color name="steadyColor">#FF9800</color>
+</resources>
