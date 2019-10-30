@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Court Counter App</string>
+    <string name="score1">49</string>
+    <string name="score2">28</string>
+    <string name="plus3">+3 Points</string>
+    <string name="plus2">+2 Points</string>
+    <string name="freethrow">Free throw</string>
+    <string name="plus3B">+3 Points</string>
+    <string name="plus2B">+2 Points</string>
+    <string name="freeThrowB">Free throw</string>
+    <string name="team_txt">0</string>
+    <string name="teamb_score">0</string>
+    <string name="score1_txt">Hit 1</string>
+    <string name="score2_txt">Hit 2</string>
+    <string name="score_h3">Hit 3</string>
+    <string name="score_h2">Hit 2</string>
+    <string name="reset_txt">Reset</string>
+</resources>
