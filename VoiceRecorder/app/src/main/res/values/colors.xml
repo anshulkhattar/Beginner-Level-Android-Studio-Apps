@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#CF0600</color>
+
+    //MAIN COLOR------------------------------------------------------------------------------------
+    <color name="baackground">#FFFFFF</color>
+    <color name="textcolor">#000000</color>
+
+    //BTN RECORD STOP COLOR------------------------------------------------------------------------------
+    <color name="STROKE_BTN">#CF0600</color>
+    <color name="SOLID_BTN">#FFFFFF</color>
+
+</resources>
