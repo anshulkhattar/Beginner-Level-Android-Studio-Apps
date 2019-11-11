@@ -1,3 +1,5 @@
-[submodule "Hotel_Book_Recommendation"]
-	path = Hotel_Book_Recommendation
-	url = https://github.com/jagzmz/HotelBookingRecomendation.git
+
+[submodule "Lifecycleaware-adapter"]
+	path = Lifecycleaware-adapter
+	url = https://github.com/ajaypro/Lifecycleaware-adapter.git
+
