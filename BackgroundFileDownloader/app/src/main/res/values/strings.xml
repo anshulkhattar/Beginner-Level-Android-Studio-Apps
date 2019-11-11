@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BackgroundFileDownloader</string>
+    <string name="these_are_very_high_dimensional_images_from_hubble">These are high dimensional images from Hubble. Will be downloaded in /Downloads</string>
+    <string name="start_downloading">Start Downloading!</string>
+    <string name="_50_mb">50 MB</string>
+    <string name="_18_85_mb">18.85 MB</string>
+    <string name="_23_47_mb">23.47 MB</string>
+    <string name="_30_mb">30.26 MB</string>
+</resources>
