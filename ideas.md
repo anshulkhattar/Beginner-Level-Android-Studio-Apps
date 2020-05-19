@@ -33,3 +33,4 @@ List any ideas you may have for Beginner Level Android Apps
 - Vibration Sensor - turn your mobile into a mini earthquake sensor.
 
 - CrytoCurrency Tracker - Simple app to get real time cryto and Fiat currency price and also comes with a currency exchange calculator for any amount. 
+- Using camera to assess iregularities in skin moles.
