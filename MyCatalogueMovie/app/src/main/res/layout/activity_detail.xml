@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gustiawan.mycataloguemovie.DetailActivity">
+       <ImageView
+           android:id="@+id/ivHeader"
+           android:layout_width="match_parent"
+           android:layout_height="200dp"
+           android:layout_marginBottom="@dimen/vertical_margin"/>
+
+    <TextView
+        android:id="@+id/tvDetailJudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/judul"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="@dimen/horizontal_margin"
+        android:layout_marginRight="@dimen/horizontal_margin"/>
+    <TextView
+        android:id="@+id/tvYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/horizontal_margin"
+        android:layout_marginRight="@dimen/horizontal_margin"
+        android:layout_marginBottom="8dp"/>
+
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginRight="@dimen/horizontal_margin"
+               android:layout_marginLeft="@dimen/horizontal_margin">
+
+               <ImageView
+                   android:id="@+id/ivPoster"
+                   android:layout_width="80dp"
+                   android:layout_height="100dp"
+                   android:layout_marginRight="8dp" />
+
+               <TextView
+                   android:id="@+id/tvDetailSinopsis"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="hehehehehe"
+                   android:layout_marginRight="@dimen/horizontal_margin" />
+
+           </LinearLayout>
+       </ScrollView>
+</LinearLayout>

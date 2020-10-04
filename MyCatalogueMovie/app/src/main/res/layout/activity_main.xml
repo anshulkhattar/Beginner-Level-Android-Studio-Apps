@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    tools:context="com.gustiawan.mycataloguemovie.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <EditText
+            android:id="@+id/edt_judulFilm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:maxLines="1"
+            android:layout_weight="0.8"
+            android:hint="@string/cari_judul_film"/>
+        <Button
+            android:id="@+id/btn_cari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cari"
+            android:layout_weight="0.2" />
+    </LinearLayout>
+
+<TextView
+    android:id="@+id/status_movie"
+    android:text="@string/discovery"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+<ListView
+    android:id="@+id/Lv_movie"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+</LinearLayout>

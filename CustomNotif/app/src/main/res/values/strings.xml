@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CustomNotif</string>
+    <string name="text_show_notif">Testing Notif With Replay</string>
+    <string name="notif_action_reply">Reply Notif</string>
+    <string name="notif_title">New Notification</string>
+    <string name="notif_content">Ada notif baru</string>
+    <string name="notif_title_sent">Reply Sent</string>
+    <string name="notif_content_sent">Message has been sent</string>
+    <string name="hint_reply">Masukkan reply</string>
+</resources>

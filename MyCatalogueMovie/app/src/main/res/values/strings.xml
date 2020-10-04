@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyCatalogueMovie</string>
+    <string name="cari">Cari</string>
+    <string name="cari_judul_film">Cari Judul Film</string>
+    <string name="discovery">Discovery</string>
+    <string name="dilan_1990">Dilan 1990</string>
+    <string name="sinopsis">Sinopsis</string>
+    <string name="judul">JUDUL</string>
+</resources>

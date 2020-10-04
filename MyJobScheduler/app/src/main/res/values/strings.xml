@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyJobScheduler</string>
+    <string name="click_the_start_button_to_start_the_weather_task_or_click_the_cancel_button_to_cancel_the_weather_task">Click the start button to start the weather task or click the cancel button to cancel the weather task</string>
+    <string name="start">Start</string>
+    <string name="cancel">Cancel</string>
+    <string name="gio_ganteng_alumni_212">Gio Ganteng Alumni 212</string>
+</resources>

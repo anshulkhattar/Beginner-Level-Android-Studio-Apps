@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/vertical_margin">
+
+    <LinearLayout
+        android:layout_weight="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/poster_movie"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/horizontal_margin"
+        android:layout_weight="0.4">
+
+        <TextView
+            android:id="@+id/tv_judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dilan_1990"
+            android:textStyle="bold"
+            android:textColor="@color/hitam"
+            android:textSize="22sp"
+            android:layout_marginBottom="@dimen/vertical_margin"/>
+        <TextView
+            android:id="@+id/tv_sinopsis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sinopsis"
+            android:maxLines="2"
+            android:textSize="14sp"
+            android:textColor="@color/hitam"
+            android:ellipsize="end"/>
+    </LinearLayout>
+
+</LinearLayout>
