@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Coded by justudin <www.github.com/justudin>
+  ~ MIT (c) 2020.
+  -->
+
+<!--
+  ~ Coded by justudin <www.github.com/justudin>
+  ~ MIT (c) 2020.
+  -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:radius="10dp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp" />
+    <solid android:color="@color/gray" />
+    <stroke
+        android:width="4dp"
+        android:color="@android:color/white" />
+</shape>

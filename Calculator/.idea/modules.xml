@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Beginner-Level-Android-Studio-Apps-Calculator.iml" filepath="$PROJECT_DIR$/.idea/modules/Beginner-Level-Android-Studio-Apps-Calculator.iml" group="Calculator" />
       <module fileurl="file://$PROJECT_DIR$/Calculator.iml" filepath="$PROJECT_DIR$/Calculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Calculator-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Calculator-app.iml" group="Calculator/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
