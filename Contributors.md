@@ -2,6 +2,7 @@
 To add your name to the repository contributors, Use this template below:
 [Your Name Goes Here]( http://Your Github Link )
 -->
+[Anchal Ajay](https://github.com/anchal12ajay12)
 
 [Mahesh Jaganiya](https://github.com/jagzmz)
 
