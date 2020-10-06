@@ -44,3 +44,4 @@ To add your name to the repository contributors, Use this template below:
 
 [Deepanshu Mishra](https://github.com/deepanshumishra)
 
+[Aayush ashok](https://github.com/aayush-ashok)
