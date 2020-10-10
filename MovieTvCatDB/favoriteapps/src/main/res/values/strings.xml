@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Favorite MovieTVCat</string>
+    <string name="judul_movie">title movie</string>
+    <string name="release_date">01–01–2021</string>
+    <string name="rating">9.9</string>
+    <string name="todo">TODO</string>
+</resources>
