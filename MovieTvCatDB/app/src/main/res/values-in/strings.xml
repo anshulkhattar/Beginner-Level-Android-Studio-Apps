@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name = "app_name"> MovieTvCat </string>
+    <string name = "judul_movie"> judul film </string>
+    <string name = "movies"> Film </string>
+    <string name = "tvshow"> Acara TV </string>
+
+    <string name = "action_settings"> Pengaturan </string>
+    <string name = "release_date"> Tanggal Rilis : </string>
+    <string name = "genre"> Genre : </string>
+    <string name = "todo"> TODO </string>
+    <string name = "title_movie"> Film </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="languag_en">Inggris</string>
+    <string name="language_id">Indonesia</string>
+    <string name="btn_save_leangue">Simpan</string>
+    <string name="text_setting_language">Pengaturan Bahasa</string>
+    <string name="data_404">Data Tidak Ditemukan</string>
+    <string name="homepage">Beranda :</string>
+    <string name="production">Produksi :</string>
+    <string name="rating">9.9</string>
+    <string name="synopsis">Ringkasan</string>
+    <string name="localization">id-ID</string>
+    <string name="add_to_favorite">TAMBAH KE FAVORIT</string>
+    <string name="description">Deskripsi</string>
+    <string name="favorite">Favorit</string>
+    <string name="images">Gambar</string>
+    <string name="remove_to_favorite">HAPUS DARI FAVORIT</string>
+    <string name="search">Cari</string>
+    <string name="appwidget_text">My Favorite Movie</string>
+    <string name="refresh">Muat Ulang</string>
+    <string name="daily_reminder">Pengingat Harian</string>
+    <string name="release_today_reminder">Pengingat Rilis Hari Ini</string>
+    <string name="daily_message">"Ayo cek aplikasi, banyak film dan acara Tv yang menarik loh...."</string>
+    <string name="release_check">"telah rilis, ayo cek selengkapnya"</string>
+    <string name="now_playing_check">"sedang diputar, ayo cek selengkapnya"</string>
+    <string name="release_month">"dirilis bulan ini, periksa lengkap di aplikasi"</string>
+</resources>

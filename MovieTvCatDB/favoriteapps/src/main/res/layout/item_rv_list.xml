@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginStart="13dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="13dp"
+    android:layout_marginBottom="8dp"
+    card_view:cardCornerRadius="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_backdrops"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginBottom="64dp"
+            android:background="@color/colorAccent"
+            android:scaleType="centerCrop"
+            android:tint="#6F000000"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="0.0"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints"
+            android:contentDescription="@string/todo" />
+
+        <ImageView
+            android:id="@+id/img_poster"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="24dp"
+            android:background="@color/colorPrimary"
+            android:scaleType="fitXY"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/txt_judul"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:layout_toEndOf="@id/img_poster"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/judul_movie"
+            android:textColor="@color/colorWhite"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            card_view:layout_constraintBottom_toBottomOf="@+id/img_backdrops"
+            card_view:layout_constraintEnd_toEndOf="@+id/img_backdrops"
+            card_view:layout_constraintStart_toEndOf="@+id/img_poster" />
+
+        <TextView
+            android:id="@+id/txt_tgl_rilis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_judul"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_toEndOf="@id/img_poster"
+            android:background="@drawable/rounded_grey"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="7dp"
+            android:text="@string/release_date"
+            android:textColor="@color/colorWhite"
+            card_view:layout_constraintBottom_toBottomOf="@+id/txt_rating"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="0.0"
+            card_view:layout_constraintStart_toEndOf="@+id/txt_rating"
+            card_view:layout_constraintTop_toTopOf="@+id/txt_rating"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txt_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_tgl_rilis"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="24dp"
+            android:layout_toEndOf="@id/img_poster"
+            android:background="@drawable/rounded_grey"
+            android:drawableStart="@drawable/ic_star"
+            android:drawablePadding="2dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:text="@string/rating"
+            android:textColor="@color/colorWhite"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toEndOf="@+id/img_poster"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

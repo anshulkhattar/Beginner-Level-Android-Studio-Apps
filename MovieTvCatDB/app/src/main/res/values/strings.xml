@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">MovieTvCat</string>
+    <string name="judul_movie">title movie</string>
+    <string name="localization">en-US</string>
+    <string name="movies">Movies</string>
+    <string name="tvshow">Tv Shows</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="release_date">Release Date : </string>
+    <string name="genre">Genre : </string>
+    <string name="todo">TODO</string>
+    <string name="title_movie">Movies</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="languag_en">English</string>
+    <string name="language_id">Indonesia</string>
+    <string name="btn_save_leangue">Save</string>
+    <string name="text_setting_language">Setting Language</string>
+    <string name="data_404">Data Not Found</string>
+    <string name="rating">9.9</string>
+    <string name="synopsis">Synopsis</string>
+    <string name="production">Production :</string>
+    <string name="homepage">Homepage :</string>
+    <string name="favorite">Favorite</string>
+    <string name="add_to_favorite">ADD TO FAVORITE</string>
+    <string name="remove_to_favorite">REMOVE FROM FAVORITE</string>
+    <string name="description">Description</string>
+    <string name="images">Images</string>
+    <string name="search">Search</string>
+    <string name="appwidget_text">My Favorite Movie</string>
+    <string name="refresh">Refresh</string>
+    <string name="daily_reminder">Daily Reminder</string>
+    <string name="release_today_reminder">Release Today Reminder</string>
+    <string name="daily_message">"let's check the application, lots of interesting movies and TV shows"</string>
+    <string name="release_check">"has been released, let's check in full"</string>
+    <string name="now_playing_check">"now playing, let's check in full"</string>
+    <string name="release_month">"released this month, check full in the application"</string>
+</resources>
