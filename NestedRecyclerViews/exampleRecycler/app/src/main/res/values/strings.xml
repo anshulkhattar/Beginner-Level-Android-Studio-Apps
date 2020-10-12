@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">exampleRecycler</string>
+    <string name="mobile_notification_bar">Mobile notification bar</string>
+</resources>
