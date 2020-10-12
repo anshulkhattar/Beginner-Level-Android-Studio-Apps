@@ -3,3 +3,6 @@
 	path = Lifecycleaware-adapter
 	url = https://github.com/ajaypro/Lifecycleaware-adapter.git
 
+[submodule "OAuthLoginFirebase"]
+	path = OAuthLoginFirebase
+	url = https://github.com/DineshBS44/OAuthLoginFirebase
