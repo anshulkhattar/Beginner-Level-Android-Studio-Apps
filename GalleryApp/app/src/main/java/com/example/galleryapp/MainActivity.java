@@ -19,7 +19,7 @@ RecyclerView boj;
     }
 }
 
-public class GalleryProvider extends AsyncTask<Void,Void, ArrayList<Integer>>{
+class GalleryProvider extends AsyncTask<Void,Void, ArrayList<Integer>>{
 
     @Override
     protected void onPreExecute() {
@@ -30,9 +30,6 @@ public class GalleryProvider extends AsyncTask<Void,Void, ArrayList<Integer>>{
     protected ArrayList<Integer> doInBackground(Void... voids) {
         ArrayList<Integer> data=new ArrayList<>();
         return null;
-
-
-
 
     }
 
