@@ -46,4 +46,7 @@ To add your name to the repository contributors, Use this template below:
 
 [Deepanshu Mishra](https://github.com/deepanshumishra)
 
+[Pranati Mittal](https://github.com/pranatimittal)
+
 [Daksh Verma](https://github.com/dakshverma2411)
+
