@@ -6,3 +6,6 @@
 [submodule "OAuthLoginFirebase"]
 	path = OAuthLoginFirebase
 	url = https://github.com/DineshBS44/OAuthLoginFirebase
+[submodule "EcommerceMarvel"]
+	path = EcommerceMarvel
+	url = https://github.com/joanasoaresd/EcommerceMarvel.git
