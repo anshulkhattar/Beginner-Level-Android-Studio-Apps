@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SplashActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scientific"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_marginBottom="10px"
+        tools:layout_editor_absoluteX="173dp"
+        tools:layout_editor_absoluteY="347dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculator"
+        android:textColor="#785DD3"
+
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="173dp"
+        tools:layout_editor_absoluteY="347dp" />
+
+</LinearLayout>
