@@ -7,87 +7,106 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:background="#000"
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp">
 
-        android:titleTextColor="#fff"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:targetApi="lollipop"></androidx.appcompat.widget.Toolbar>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_principal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-    <EditText
-        android:id="@+id/number"
-        android:layout_width="362dp"
-        android:layout_height="69dp"
-        android:layout_marginTop="358dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:hint="Number of Years"
-        android:inputType="numberDecimal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints" />
+                    <EditText
+                        android:id="@+id/principal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:inputType="number"
+                        android:digits="0123456789."
+                        android:hint="@string/hint_principal" />
 
-    <EditText
-        android:id="@+id/loan"
-        android:layout_width="360dp"
-        android:layout_height="69dp"
-        android:layout_marginTop="152dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        android:hint="Loan Required"
-        android:inputType="numberDecimal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+                </com.google.android.material.textfield.TextInputLayout>
 
 
-    <Button
-        android:id="@+id/cal"
-        android:layout_width="219dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="56dp"
-        android:background="#000"
-        android:text="Calculate"
-        android:textColor="#fff"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/number"
-        tools:ignore="MissingConstraints"></Button>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_interest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/answer"
-        android:layout_width="349dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="36dp"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/cal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.435"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints" />
+                    <EditText
+                        android:id="@+id/interest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:inputType="number"
+                        android:digits="0123456789."
+                        android:hint="@string/hint_interest" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="We provide Intrest at the rate of 10 percent "
-        android:textColor="#000"
-        android:textSize="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cal"></TextView>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_tenure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/years"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:digits="0123456789."
+                        android:hint="@string/hint_years" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button android:id="@+id/btn_calculate2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Calculate"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginTop="40dp"
+                    android:textColor="@android:color/white"/>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_emi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp">
+
+                    <EditText
+                        android:id="@+id/emi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxEms="0"
+                        android:inputType="number"
+                        android:hint="@string/hint_emi" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_total_Interest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/interest_total"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:inputType="number"
+                        android:hint="@string/hint_interest_total" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
