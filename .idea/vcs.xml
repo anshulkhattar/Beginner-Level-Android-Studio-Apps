@@ -2,6 +2,9 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/EcommerceMarvel" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Hotel_Book_Recommendation" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Lifecycleaware-adapter" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/OAuthLoginFirebase" vcs="Git" />
   </component>
 </project>

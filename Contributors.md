@@ -52,3 +52,4 @@ To add your name to the repository contributors, Use this template below:
 
 [Daksh Verma](https://github.com/dakshverma2411)
 
+[Sai karthikeya](https://github.com/asaikarthikeya)
