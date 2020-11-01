@@ -83,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603990861402</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Facerecognation app">
+      <created>1603994886927</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603994886927</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -100,17 +107,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Stopwatch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Stopwatch" />
+    <MESSAGE value="Facerecognation app" />
+    <option name="LAST_COMMIT_MESSAGE" value="Facerecognation app" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="301" y="0" key="CommitChangelistDialog2" timestamp="1603990856660">
+    <state x="301" y="0" key="CommitChangelistDialog2" timestamp="1603994886071">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="301" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1603990856660" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603990868318">
+    <state x="301" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1603994886071" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603994900192">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603990868318" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603994900192" />
   </component>
   <component name="masterDetails">
     <states>
