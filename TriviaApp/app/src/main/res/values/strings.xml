@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TriviaApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ask_name">What is your name?</string>
+    <string name="question1">Who is the best cricketer in the world?</string>
+    <string name="question2">What are the colors in the Indian national flag? Select all:</string>
+</resources>
