@@ -1,11 +1,8 @@
 ## Android snippet 
-Recycler views are always tricky to work with. This code gives you a reference for recycler views used in Android. 
+I have created a Notes App(KEEP), which uses Recycler View in it.
 
----
+The is created by using industrial techniques Android Architechture components and Uses MVVM structure to maintain the code base easily.
 
-Open the application with android studio. 
-Horizontal recycler views are embedded in vertical recycler view
+You can add your note in Edit text Block and submit via button which results in instant update of the UI using LIVE DATA Feature.
 
-![Recycler View Example](Selection_011.png)
----
-Language used: Kotlin
+
