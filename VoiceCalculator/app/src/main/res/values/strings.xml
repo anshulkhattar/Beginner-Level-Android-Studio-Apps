@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Voice Calculator</string>
+    <string name="speech_prompt">Say Something</string>
+    <string name="speech_not_supported">Sorry! Your Device does not support speech input</string>
+    <string name="tap_on_mic">Tap on mic to Speak</string>
+</resources>
