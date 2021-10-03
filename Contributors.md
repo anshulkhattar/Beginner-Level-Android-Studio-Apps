@@ -58,4 +58,4 @@ To add your name to the repository contributors, Use this template below:
 
 [Unni Krishnan](https://github.com/unnikrishnan2002)
 
-[Vivek Kumar Gupta] (https://github.com/vivek9386/Beginner-Level-Android-Studio-Apps)
+[Vivek Kumar Gupta] (https://github.com/vivek9386)
