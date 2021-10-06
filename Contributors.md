@@ -62,3 +62,5 @@ To add your name to the repository contributors, Use this template below:
 
 [Vivek Kumar Gupta] (https://github.com/vivek9386)
 
+[Anurag Pathak](https://github.com/AnuragThePathak)
+
