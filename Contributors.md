@@ -22,6 +22,8 @@ To add your name to the repository contributors, Use this template below:
 
 [Nudennie White](https://github.com/tc2r)
 
+[Aman Kumar](https://github.com/aman2kumar)
+
 [Abdulrahman Abdulkarim](https://github.com/AbdulDroid)
 
 [Amit Chauhan](https://github.com/me-singh)
