@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CustomSpinner</string>
+    <string name="delete_items">Delete Items</string>
+    <string name="add_items">Add Items</string>
+</resources>
