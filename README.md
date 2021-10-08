@@ -24,7 +24,14 @@ How to get started
 6. Comment on the issue using the given format - "Name-AppName-PullRequestId".
 
 7. Wait for your PR review and merge approval!
-
+    
+    
+### Remember
+   - Add your android project.
+   - Add your name to Contributors list (Contributors.md)
+   - People doing both will only get their PRs merged.
+    
+    
 ⭐⭐Star this repository if you liked the idea and had fun.⭐⭐
 
 Checkout my profile for my other projects.
