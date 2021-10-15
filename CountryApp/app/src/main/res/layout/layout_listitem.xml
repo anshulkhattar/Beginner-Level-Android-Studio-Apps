@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:id="@+id/parent_layout">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/cNameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/image"
+        android:text="Canada"
+        android:textColor="#000"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/presidentNameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="140dp"
+        android:layout_toRightOf="@+id/image"
+        android:text="Canada"
+        android:textColor="#000"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/populationTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="260dp"
+        android:layout_toRightOf="@+id/image"
+        android:text="Canada"
+        android:textColor="#000"
+        android:textSize="17sp" />
+
+
+</RelativeLayout>
