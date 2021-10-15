@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Diabetes Units Calculator</string>
+    <string name="enter_mmol_i_reading">Enter Mmol/I Reading</string>
+    <string name="enter_carbs_consumed_mg">Enter Carbs Consumed (mg)</string>
+    <string name="calculate_button">Calculate</string>
+    <string name="setup_button">Setup</string>
+    <string name="home_titletext">Calculate Your Units</string>
+    <string name="youdontneedtotake">You don\'t need to take anything!</string>
+</resources>
