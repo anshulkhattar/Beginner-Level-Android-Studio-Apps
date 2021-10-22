@@ -6,6 +6,8 @@ To add your name to the repository contributors, Use this template below:
 
 [Prachee Javiya](https://github.com/pracheejaviya1)
 
+[Skwangles S](https://github.com/skwangles)
+
 [Anchal Ajay](https://github.com/anchal12ajay12)
 
 [Mahesh Jaganiya](https://github.com/jagzmz)
@@ -46,7 +48,7 @@ To add your name to the repository contributors, Use this template below:
 
 [Nilesh](https://github.com/nilesh)
 
-[Mbah Derek] (https://github.com/derekdunes) 
+[Mbah Derek](https://github.com/derekdunes) 
 
 [Deepanshu Mishra](https://github.com/deepanshumishra)
 
@@ -62,7 +64,7 @@ To add your name to the repository contributors, Use this template below:
 
 [Siddharth Singh](https://github.com/SiddyDevelops)
 
-[Vivek Kumar Gupta] (https://github.com/vivek9386)
+[Vivek Kumar Gupta](https://github.com/vivek9386)
 
 [Anurag Pathak](https://github.com/AnuragThePathak)
 

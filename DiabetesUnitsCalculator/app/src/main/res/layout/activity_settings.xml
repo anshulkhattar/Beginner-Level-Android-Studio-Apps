@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+
+    <EditText
+        android:id="@+id/number_overmmol"
+        android:layout_width="106dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="e.g. 3"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number_mmolthreshold" />
+
+    <EditText
+        android:id="@+id/number_mmolthreshold"
+        android:layout_width="106dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:hint="e.g. 6"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_mmol_tv" />
+
+    <EditText
+        android:id="@+id/number_unitspermmol"
+        android:layout_width="105dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="e.g. 1"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number_overmmol" />
+
+    <TextView
+        android:id="@+id/settings_carbssettings_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Carbs Settings"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number_unitspermmol" />
+
+    <TextView
+        android:id="@+id/settings_mmol_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Units per mmol/I Settings"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/settings_mmolthreshold_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mmol/I threshold \nbefore calculating Units?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_mmol_tv" />
+
+    <TextView
+        android:id="@+id/settings_overmmol_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How many mmol/I \nover threshold to apply 1 measure of Units?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/number_overmmol" />
+
+    <TextView
+        android:id="@+id/settings_unitspermmol_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How many Units \nper measure of mmol/I over threshold?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number_overmmol" />
+
+    <EditText
+        android:id="@+id/number_carbsperunit"
+        android:layout_width="107dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="e.g. 6"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_carbssettings_tv" />
+
+    <EditText
+        android:id="@+id/number_unitspercarb"
+        android:layout_width="109dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="e.g. 1"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number_carbsperunit" />
+
+    <EditText
+        android:id="@+id/number_threshold_optional"
+        android:layout_width="108dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="(Optional)"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number_unitspercarb" />
+
+    <TextView
+        android:id="@+id/settings_percarbs_tb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How many Carbs(mg) \nper measure of unit?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_carbssettings_tv" />
+
+    <TextView
+        android:id="@+id/settings_unitsper_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How many Units \nper measure of Carbs?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number_carbsperunit" />
+
+    <TextView
+        android:id="@+id/settings_carbsthreshold_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How many Carbs(mg) \nbefore applying measurements \n(Optional)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number_unitspercarb" />
+
+    <Button
+        android:id="@+id/settings_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/settings_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/settings_cancel"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toEndOf="@+id/settings_save" />
+
+    <Button
+        android:id="@+id/settings_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
