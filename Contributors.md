@@ -46,7 +46,7 @@ To add your name to the repository contributors, Use this template below:
 
 [Nilesh](https://github.com/nilesh)
 
-[Mbah Derek] (https://github.com/derekdunes) 
+[Mbah Derek](https://github.com/derekdunes) 
 
 [Deepanshu Mishra](https://github.com/deepanshumishra)
 
@@ -62,8 +62,12 @@ To add your name to the repository contributors, Use this template below:
 
 [Siddharth Singh](https://github.com/SiddyDevelops)
 
-[Vivek Kumar Gupta] (https://github.com/vivek9386)
+[Vivek Kumar Gupta](https://github.com/vivek9386)
 
 [Anurag Pathak](https://github.com/AnuragThePathak)
 
 [Nguyen Khoa](https://github.com/ntvkhoasgt)
+
+[Rupesh Kumar](https://github.com/rupesh-kumar-lpu)
+
+
