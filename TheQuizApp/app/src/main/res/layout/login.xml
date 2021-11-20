@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="@drawable/background_dialog"
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:background="@drawable/background_dialog"
     android:layout_width="320.0dip" android:layout_height="250.0dip"
   xmlns:android="http://schemas.android.com/apk/res/android">
 
@@ -44,7 +45,7 @@
         android:text=""
         android:textColor="@color/new2"
         android:theme="@style/btnS"
-        />
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <TextView
         android:id="@id/passText"
@@ -61,15 +62,16 @@
     <EditText
         android:id="@+id/paswrd"
         android:layout_width="match_parent"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
         android:layout_height="10dp"
         android:layout_weight="1"
         android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
         android:inputType="textPassword"
         android:text=""
         android:textColor="@color/new2"
-        android:theme="@style/btnS"/>
+        android:theme="@style/btnS"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <LinearLayout android:gravity="center"
         android:id="@id/layoutButtons"
@@ -86,7 +88,8 @@
             android:layout_height="wrap_content"
             android:text="Login"
 
-            android:textColor="#ff004269" />
+            android:textColor="#ff004269"
+            tools:ignore="TouchTargetSizeCheck" />
 
     </LinearLayout>
 
@@ -97,10 +100,11 @@
         android:layout_height="wrap_content"
 
         android:layout_gravity="center"
-        android:onClick="regis"
         android:gravity="center"
+        android:onClick="regis"
         android:text="Sign Up"
-        android:textColor="@color/red"/>
+        android:textColor="@color/red"
+        tools:ignore="TouchTargetSizeCheck" />
 
 
 </LinearLayout>
